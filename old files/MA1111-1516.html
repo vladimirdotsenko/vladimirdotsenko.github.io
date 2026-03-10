@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="Arcsin, www.arcsin.se"/> 
+<link rel="stylesheet" type="text/css" href="../default.css"/>
+<title>Linear algebra 1, TCD 2015/16</title>
+</head>
+
+<body>
+
+<div class="main">
+
+	<div class="container">
+		<div class="item"><center><h2>Professional page of Vladimir Dotsenko</h2></center> </div>
+
+		<div class="gfx"><a href="../index.html"><span></span></a></div>
+
+		<div class="menu">
+			<a href="../index.html"><span>Home</span></a>
+			<a href="../research.html"><span>Research</span></a>
+			<a href="../teaching.html"><span>Teaching</span></a>		
+			<a href="../links.html"><span>Links</span></a>		
+			<a href="../contact.html" id="last"><span>Contact me</span></a>
+		</div>
+
+		<div class="content">
+
+			<div class="item">
+			    <h2>MA1111: Linear algebra 1, TCD 2015/16</h1>
+			      <ol>
+				<li>  Linear algebra in 2d and 3d. Vectors. Dot and cross products. </li>
+				<li> Systems of simultaneous linear equations. Gauss--Jordan elimination. </li>
+				<li> (Reduced) row echelon form for a rectangular matrix. Principal and free variables. Matrix product and row operations. Computing the inverse matrix using row operations.</li>
+				<li> Permutations. Odd and even permutations. Determinants. Row and column operations on determinants. det(A<sup>T</sup>)=det(A).</li>
+				<li> Minors. Cofactors. Adjoint / adjugate matrix. Computing the inverse matrix using determinants. Cramer's rule for systems with the same number of equations and unknowns. </li>
+				<li> Fredholm's alternative. An application: the discrete Dirichlet's problem.</li>
+				<li> Coordinate vector space. Linear independence and span. </li>
+				<li> Fields: rationals, reals, and complex. Abstract vector spaces. Linear independence and span in abstract vector spaces. Bases and dimensions. Subspaces.</li>
+				<li> Linear operators. Matrix of a linear operator relative to given bases. Change of basis. Transition matrices. Similar matrices define the same linear operator in different bases. Example: a closed formula for Fibonacci numbers.</li>
+			      </ol>
+
+			<p><b> Course materials: </b><br>
+
+				    <table border="1">
+				    <thead>
+				      <tr>
+					<th>Lecture&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th>Topics covered</th>
+					<th>Lecture notes/slides</th>
+					<th>Homeworks/Tutorials/Solutions</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+					<td>
+					  1 (30/09) 
+					</td>
+      					<td>
+					  Introduction. Vectors in 2D and 3D, addition, re-scaling, scalar product (dot product).
+					</td>
+					<td>
+					  L1 [<a href="files/MA1111-1516/1111L1handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  2 (01/10) 
+					</td>
+      					<td>
+					Properties of scalar products. Vector product (cross product). 
+					</td>
+					<td>
+					  L2 [<a href="files/MA1111-1516/1111L2handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  3 (01/10) 
+					</td>
+      					<td>
+					Multilinearity. Areas and volumes. 
+					</td>
+					<td>
+					  L3 [<a href="files/MA1111-1516/1111L3handout.pdf">PDF</a>]
+					</td>
+					<td>
+					  HW1 [<a href="files/MA1111-1516/1111HW1.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  4 (07/10) 
+					</td>
+      					<td>
+					First tutorial
+					</td>
+					<td>
+					</td>
+					<td>
+					T1 [<a href="files/MA1111-1516/1111T1.pdf">PDF</a>], T1 solutions [<a href="files/MA1111-1516/1111TS1.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  5 (08/10) 
+					</td>
+      					<td>
+					Applications of scalar and vector products. Quaternions. Lines and planes in 2D and 3D.  Systems of linear equations. 
+					</td>
+					<td>
+					  L4 [<a href="files/MA1111-1516/1111L4handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  6 (08/10) 
+					</td>
+      					<td>
+Gauss-Jordan elimination. Elementary row operations. Reduced row echelon form. Towards matrix arithmetic. 
+					</td>
+					<td>
+					  L5 [<a href="files/MA1111-1516/1111L5handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW1 solutions [<a href="files/MA1111-1516/1111A1.pdf">PDF</a>]
+					HW2 [<a href="files/MA1111-1516/1111HW2.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  7 (14/10) 
+					</td>
+      					<td>
+					Matrix operations. Three definitions of matrix product. 
+					</td>
+					<td>
+					 L6 [<a href="files/MA1111-1516/1111L6handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					 8 (15/10) 
+					</td>
+      					<td>
+					Elementary matrices. Invertible matrices. Only a square matrix can be invertible. Computing inverses using elementary row operations.  
+					</td>
+					<td>
+					L7 [<a href="files/MA1111-1516/1111L7handout.pdf">PDF</a>]			
+					</td>
+					<td>
+					
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  9 (15/10) 
+					</td>
+      					<td>
+					Permutations. Odd and even permutations. Determinants. Elementary row operations on determinants.
+					</td>
+					<td>
+					 L8 [<a href="files/MA1111-1516/1111L8handout.pdf">PDF</a>]				
+					</td>
+					<td>
+					HW2 solutions [<a href="files/MA1111-1516/1111A2.pdf">PDF</a>] HW3 [<a href="files/MA1111-1516/1111HW3.pdf">PDF</a>] 
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  10 (21/10) 
+					</td>
+      					<td>
+					 Second tutorial
+					</td>
+					<td>
+					</td>
+					<td>
+					T2 [<a href="files/MA1111-1516/1111T2.pdf">PDF</a>], T2 solutions [<a href="files/MA1111-1516/1111TS2.pdf">PDF</a>]	
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  11 (22/10) 
+					</td>
+      					<td>
+					 Determinants and invertibility. Determinant of the product of matrices. Minors and cofactors. Row expansion of determinants (statement). 
+					</td>
+					<td>
+					 L9 [<a href="files/MA1111-1516/1111L9handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  12 (22/10) 
+					</td>
+      					<td>
+					Row expansion of determinants (proof). Adjoint / adjugate matrix. A closed formula for the inverse matrix. Cramer's formula. Summary of results on systems with the same number of equations and unknowns.	
+					</td>
+					<td>
+					L10 [<a href="files/MA1111-1516/1111L10handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW3 solutions [<a href="files/MA1111-1516/1111A3.pdf">PDF</a>] HW4 [<a href="files/MA1111-1516/1111HW4.pdf">PDF</a>] 
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  13 (28/10) 
+					</td>
+      					<td>
+					Finite dimensional Fredholm's alternative. An application: the discrete Dirichlet problem. Vandermonde determinant. Lagrange interpolation formula.
+					</td>
+					<td>
+					L11 [<a href="files/MA1111-1516/1111L11handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+
+				      <tr>
+					<td>
+					  14 (29/10) 
+					</td>
+      					<td>
+					Row expansions, 3D volumes, and cross products. Coordinate vector spaces. Linear independence. Spanning property. Bases.
+					</td>
+					<td>
+					  L12 [<a href="files/MA1111-1516/1111L12handout.pdf">PDF</a>]
+					</td>
+					<td>	
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  15 (29/10) 
+					</td>
+      					<td>
+					Linear maps and matrices. Subspaces of R<sup>n</sup>. Two main examples: solution sets to systems of linear equations and linear spans. Relating these two examples. 
+					</td>
+					<td>
+					L13 [<a href="files/MA1111-1516/1111L13handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW4 solutions [<a href="files/MA1111-1516/1111A4.pdf">PDF</a>] HW5 [<a href="files/MA1111-1516/1111HW5.pdf">PDF</a>]  
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  16 (04/11) 
+					</td>
+      					<td>
+					Third tutorial. 
+					</td>
+					<td>
+					</td>
+					<td>
+					T3 [<a href="files/MA1111-1516/1111T3.pdf">PDF</a>], T3 solutions [<a href="files/MA1111-1516/1111TS3.pdf">PDF</a>]	
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  17 (05/11) 
+					</td>
+      					<td>
+					Abstract vector spaces. Examples.
+					</td>
+					<td>
+					 L14 [<a href="files/MA1111-1516/1111L14handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  18 (05/11) 
+					</td>
+      					<td>
+					Consequences of properties of vector operations. Fields. 
+					</td>
+					<td>
+					L15 [<a href="files/MA1111-1516/1111L15handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW5 solutions [<a href="files/MA1111-1516/1111A5.pdf">PDF</a>] HW6 [<a href="files/MA1111-1516/1111HW6.pdf">PDF</a>]  
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					   
+					</td>
+      					<td>
+					 Reading week, no classes 
+					</td>
+					<td>
+					
+					</td>
+					<td>
+					
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  19 (18/11) 
+					</td>
+      					<td>
+					No linear algebra class, an analysis lecture by Prof O'Donovan instead
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  20 (19/11) 
+					</td>
+      					<td>
+					 "Coin weighing problem" as an example of field change. Linear independence, span, bases in abstract vector spaces.
+					</td>
+					<td>
+					L16 [<a href="files/MA1111-1516/1111L16handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  21 (19/11) 
+					</td>
+      					<td>
+					 Finite-dimensional and infinite-dimensional spaces. Dimension. Coordinates.
+					</td>
+					<td>
+					L17 [<a href="files/MA1111-1516/1111L17handout.pdf">PDF</a>]  
+					</td>
+					<td>
+					 HW6 solutions [<a href="files/MA1111-1516/1111A6.pdf">PDF</a>]
+					 HW7 [<a href="files/MA1111-1516/1111HW7.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  22 (25/11) 
+					</td>
+      					<td>
+					Fourth tutorial. 
+					</td>
+					<td>
+					</td>
+					<td>
+					T4 [<a href="files/MA1111-1516/1111T4.pdf">PDF</a>], T4 solutions [<a href="files/MA1111-1516/1111TS4.pdf">PDF</a>]	
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  23 (26/11) 
+					</td>
+      					<td>
+					Change of coordinates. Transition matrix of coordinate change. Linear maps and transformations. Examples.
+					</td>
+					<td>
+					L18 [<a href="files/MA1111-1516/1111L18handout.pdf">PDF</a>] 
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  24 (26/11) 
+					</td>
+      					<td>
+					Linear maps. Matrix of a linear map relative to given bases. Examples.
+					</td>
+					<td>
+					L19 [<a href="files/MA1111-1516/1111L19handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW7 solutions [<a href="files/MA1111-1516/1111A7.pdf">PDF</a>]
+					 HW8 [<a href="files/MA1111-1516/1111HW8.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  25 (02/12) 
+					</td>
+      					<td>
+					Composition of linear maps corresponds to the matrix product. Change of the matrix of a linear map under coordinate changes. Linear transformations and the corresponding changes of matrices.
+					</td>
+					<td>
+					L20 [<a href="files/MA1111-1516/1111L20handout.pdf">PDF</a>] 
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  26 (03/12) 
+					</td>
+      					<td>
+					Invariants of linear transformations. Example of change of coordinates. Making matrices of linear transformations diagonal: examples and counterexamples.
+					</td>
+					<td>
+					L21 [<a href="files/MA1111-1516/1111L21handout.pdf">PDF</a>] 
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  27 (03/12) 
+					</td>
+      					<td>
+					Computing Fibonacci numbers using linear algebra.
+					</td>
+					<td>
+					L22 [<a href="files/MA1111-1516/1111L22handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW8 solutions [<a href="files/MA1111-1516/1111A8.pdf">PDF</a>]
+					 HW9 [<a href="files/MA1111-1516/1111HW9.pdf">PDF</a>]
+					</td>
+				      </tr> 
+				      <tr>
+					<td>
+					  28 (09/12) 
+					</td>
+      					<td>
+					Tutorial class
+					</td>
+					<td>
+					
+					</td>
+					<td>
+					T5 [<a href="files/MA1111-1516/1111T5.pdf">PDF</a>], T5 solutions [<a href="files/MA1111-1516/1111TS5.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  29 (10/12) 
+					</td>
+      					<td>
+					Eigenvectors and eigenvalues. Example: "porridge problem".  
+					</td>
+					<td>
+					L23 [<a href="files/MA1111-1516/1111L23handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  30 (10/12) 
+					</td>
+      					<td>
+					An application of linear algebra: Google PageRank algorithm.
+					</td>
+					<td>
+					
+					</td>
+					<td>
+					HW9 solutions [<a href="files/MA1111-1516/1111A9.pdf">PDF</a>]
+					 HW10 [<a href="files/MA1111-1516/1111HW10.pdf">PDF</a>]					
+					 Practice exam [<a href="files/MA1111-1516/1111PracticeExam.pdf">PDF</a>]					
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  31 (16/12) 
+					</td>
+      					<td>
+					No class on December 16
+					</td>
+					<td>
+					
+					</td>
+					<td>
+					
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  32 (17/12) 
+					</td>
+      					<td>
+					Revision of the module 
+					</td>
+					<td>
+					
+					</td>
+					<td>
+					
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  33 (17/12) 
+					</td>
+      					<td>
+					Revision of the module 
+					</td>
+					<td>
+					
+					</td>
+					<td>
+					HW10 solutions [<a href="files/MA1111-1516/1111A10.pdf">PDF</a>]
+					</td>
+				      </tr>
+
+				    </table>
+ <!---
+				      <tr>
+					<td>
+					  28 (03/12) 
+					</td>
+      					<td>
+					No class on December 3. Homework 9 is due immediately after the tutorial class at 11am on December 4. 
+					</td>
+					<td>
+					
+					</td>
+					<td>
+					HW9 solutions [<a href="files/MA1111+1212-1415/1111A9.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  30 (04/12) 
+					</td>
+      					<td>
+					Computing Fibonacci numbers. Eigenvectors and eigenvalues.  
+					</td>
+					<td>
+					L22 [<a href="files/MA1111+1212-1415/1111L22handout.pdf">PDF</a>]  
+					</td>
+					<td>
+					HW10 [<a href="files/MA1111+1212-1415/1111HW10.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					  33 (11/12) 
+					</td>
+      					<td>
+					Revision of the module 
+					</td>
+					<td>
+					
+					</td>
+					<td>
+					
+					</td>
+				      </tr>
+
+				</table> --->
+			</div> 
+
+
+			<div class="item">
+			  <h1>Exam materials: sample papers, actual papers, solutions</h1>
+
+See course materials, mainly. Work through solutions to home assignments and tutorials, since exam papers will rely on fluency in the respective methods. Generally, check out past papers from the previous 4-5 years <b><a href="https://www.tcd.ie/academicregistry/exams/past-papers/annual/">here</a></b>. 
+			</div>
+
+			<div class="item">
+			  <h1>Textbooks</h1>
+This module does not follow any particular textbook. When needed, consult ``Elementary Linear Algebra'' by Anton and Rorres, and ``Algebra'' by Michael Artin. There will also be online lecture notes for many of the lectures. For more examples and exercises for the 1111 part (very useful to get a grip of the material), check out the free online linear algebra book by Jim Hefferon available at <a href="http://joshua.smcvt.edu/linearalgebra/">this http URL</a>.
+			</div>
+
+			<div class="item">
+			  <h1>Assessment</h1>
+			    <p>The final mark is 80%*final exam mark + 20%*home assignments result. </p>
+			</div>
+
+			<div class="item">
+				<h1>Disclaimer</h1>
+				  The person who is solely responsible for the choice of content on this page is Vladimir Dotsenko. Any views expressed here do not necessarily represent the official views of Trinity College Dublin.
+			</div>
+
+
+		</div>  
+		<div class="footer">&copy; 2015 Vladimir Dotsenko. Template design by <a href="http://templates.arcsin.se">Arcsin</a></div>
+
+	</div>	
+
+</div>
+
+
+</body>
+
+</html>
+

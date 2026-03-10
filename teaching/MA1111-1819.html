@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://latex.now.sh/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=800, initial-scale=1.0" />
+  <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" />
+  <title>Linear algebra I, TCD 2018/19</title>
+  <meta name="description"
+    content="S&eacute;minaire Topologie alg&egrave;brique" />
+  <meta name="keywords" content="latex.css,css library,class-less css,latex css" />
+  <meta property="og:title" content="LaTeX.css" />
+  <meta property="og:url" content="http://irma.math.unistra.fr/~dotsenko" />
+  <meta property="og:description"
+    content="S&eacute;minaire Topologie alg&egrave;brique" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="prism/prism.css" />
+</head>
+
+<body>
+
+<div class="main">
+
+	<div class="container">
+
+		<div class="content">
+
+			<div class="item">
+			    <h2>Linear algebra I, TCD 2018/19</h2>
+			<p><b> Syllabus: </b><br>
+
+
+			      <ol>
+				<li>  Linear algebra in 2d and 3d. Vectors. Dot and cross products. </li>
+				<li> Systems of simultaneous linear equations. Gauss--Jordan elimination. </li>
+				<li> (Reduced) row echelon form for a rectangular matrix. Principal and free variables. Matrix product and row operations. Computing the inverse matrix using row operations.</li>
+				<li> Permutations. Odd and even permutations. Determinants. Row and column operations on determinants. det(A<sup>T</sup>)=det(A).</li>
+				<li> Minors. Cofactors. Adjoint / adjugate matrix. Computing the inverse matrix using determinants. Cramer's rule for systems with the same number of equations and unknowns. </li>
+				<li> Fredholm's alternative. An application: the discrete Dirichlet's problem.</li>
+				<li> Coordinate vector space. Linear independence and span. </li>
+				<li> Fields: rationals, reals, and complex. Abstract vector spaces. Linear independence and span in abstract vector spaces. Bases and dimensions. Subspaces.</li>
+				<li> Linear operators. Matrix of a linear operator relative to given bases. Change of basis. Transition matrices. Similar matrices define the same linear operator in different bases. Example: a closed formula for Fibonacci numbers.</li>
+			      </ol>
+
+
+			<p><b> Course materials: </b><br>
+
+				    <table border="1">
+				    <thead>
+				      <tr>
+					<th>Lecture&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th>Topics covered</th>
+					<th>Lecture notes/slides</th>
+					<th>Homeworks/Tutorials/Solutions</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+					<td>
+					1 (13/09)
+					</td>
+      					<td>
+					  Introduction. Vectors in 2D and 3D, addition, re-scaling, scalar product (dot product).
+					</td>
+					<td>
+					  L1 [<a href="files/MA1111-1819/1111L1handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					2 (14/09)
+					</td>
+      				<td>
+      				Properties of scalar products. Vector product (cross product). 	
+					</td>
+					<td>
+      				L2 [<a href="files/MA1111-1819/1111L2handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW1 [<a href="files/MA1111-1819/1111HW1.pdf">PDF</a>]
+
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					3 (14/09)
+					</td>
+      				<td>
+					Multilinearity. Areas and volumes. 
+					</td>
+					<td>
+      				L3 [<a href="files/MA1111-1819/1111L3handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					4 (20/09)
+					</td>
+      					<td>
+First tutorial
+					</td>
+					<td>
+					</td>
+					<td>
+					T1 [<a href="files/MA1111-1819/1111T1.pdf">PDF</a>]
+					T1 solutions [<a href="files/MA1111-1819/1111TA1.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					5 (21/09)
+					</td>
+      				<td>
+      				Operations on vectors and their applications. Cubes on the integer grid. Quaternions. Lines and planes in 3D. Systems of linear equations.
+					</td>
+					<td>
+					L4 [<a href="files/MA1111-1819/1111L4handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					6 (21/09)
+					</td>
+      				<td>
+      				Systems of linear equations and matrices. Elementary row operations. Gauss-Jordan elimination. Row echelon matrices and reduced row echelon matrices.
+					</td>
+					<td>
+					L5 [<a href="files/MA1111-1819/1111L5handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW2 [<a href="files/MA1111-1819/1111HW2.pdf">PDF</a>]
+					HW1 solutions [<a href="files/MA1111-1819/1111A1.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					7 (27/09)
+					</td>
+      				<td>
+      				Matrix arithmetic. Addition and re-scaling. Matrix product: three equivalent definitions.
+					</td>
+					<td>
+					L6 [<a href="files/MA1111-1819/1111L6handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					8 (28/09)
+					</td>
+      				<td>
+      				Properties of matrix products.
+      				Elementary matrices. Elementary matrices and matrix products. Invertible matrices.
+					</td>
+					<td>
+					L7 [<a href="files/MA1111-1819/1111L7handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					9 (28/09)
+					</td>
+      				<td>
+      				Criterion of invertibility of a matrix. Algorithm for computing the inverse using row operations. Permutations. Odd and even permutations. 
+					</td>
+					<td>
+					L8 [<a href="files/MA1111-1819/1111L8handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW3 [<a href="files/MA1111-1819/1111HW3.pdf">PDF</a>]
+					HW2 solutions [<a href="files/MA1111-1819/1111A2.pdf">PDF</a>]
+				</td>
+				      </tr>
+				      <tr>
+					<td>
+					10 (4/10)
+					</td>
+      					<td>
+Second tutorial
+					</td>
+					<td>
+					</td>
+					<td>
+					T2 [<a href="files/MA1111-1819/1111T2.pdf">PDF</a>]
+					T2 solutions [<a href="files/MA1111-1819/1111TA2.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					11 (5/10)
+					</td>
+      					<td>
+      				Determinants. Their basic properties. Example of computation. Proof of some properties of determinants.
+					</td>
+					<td>
+					L9 [<a href="files/MA1111-1819/1111L9handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					12 (5/10)
+					</td>
+      				<td>
+      				Proof of the remaining properties of determinants. Determinants and invertibility of matrices. Determinant of the product. Determinant of the transpose matrix. Column operations. Minors and cofactors. Row expansion of determinants (beginning of proof).
+					</td>
+					<td>
+					L10 [<a href="files/MA1111-1819/1111L10handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW4 [<a href="files/MA1111-1819/1111HW4.pdf">PDF</a>]
+					HW3 solutions [<a href="files/MA1111-1819/1111A3.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					13 (11/10)
+					</td>
+      				<td>
+      					Row expansion of determinants (proof). "Wrong row expansion". Matrix form of row expansion formulas. Adjugate matrix. Formula for the inverse matrix. 
+					</td>
+					<td>
+					L11 [<a href="files/MA1111-1819/1111L11handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					14 (12/10)
+					</td>
+      				<td>
+      					Cramer's formula for solving systems of linear equation. Summary of properties equivalent to invertibility of a matrix. The finite-dimensional Fredholm alternative, and its application to the discrete Dirichlet problem. The Vandermonde determinant (statement).
+					</td>
+					<td>
+					L12 [<a href="files/MA1111-1819/1111L12handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					15 (12/10)
+					</td>
+      					<td>
+      					The Vandermonde determinant (proof). Its application to interpolation. Lagrange interpolation polynomial. The n-dimensional vector space. Linearly independent vectors. Spanning property. Bases. Examples.
+					</td>
+					<td>
+					L13 [<a href="files/MA1111-1819/1111L13handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW5 [<a href="files/MA1111-1819/1111HW5.pdf">PDF</a>]
+					HW4 solutions [<a href="files/MA1111-1819/1111A4.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					16 (18/10)
+					</td>
+      					<td>
+      				Coordinates with respect to a basis. Subspaces. Two main examples of subspaces and equivalence of the definitions.
+					</td>
+					<td>
+					L14 [<a href="files/MA1111-1819/1111L14handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					17 (19/10)
+					</td>
+      					<td>
+      						Third tutorial (TP students only)
+					</td>
+					<td>
+					</td>
+					<td>
+					T3 [<a href="files/MA1111-1819/1111T3.pdf">PDF</a>]
+					T3 solutions [<a href="files/MA1111-1819/1111TA3.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					18 (19/10)
+					</td>
+      					<td>
+      						Third tutorial (Maths/TSM/visiting students only)
+					</td>
+					<td>
+					</td>
+					<td>
+					HW6 [<a href="files/MA1111-1819/1111HW6.pdf">PDF</a>]
+					HW5 solutions [<a href="files/MA1111-1819/1111A5.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					</td>
+      					<td>
+Study week, no classes
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					19 (1/11)
+					</td>
+      				<td>
+      				Abstract vector spaces. Examples. Some simple proofs. 
+					</td>
+					<td>
+					L15 [<a href="files/MA1111-1819/1111L15handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					20 (2/11)
+					</td>
+      				<td>
+      				Further examples: spaces of polynomials. Fields. Examples of fields: rational, real, complex, binary arithmetic.
+					</td>
+					<td>
+					L16 [<a href="files/MA1111-1819/1111L16handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					21 (2/11)
+					</td>
+      				<td>
+      				Coin weighing problem (example of using different fields of scalars). Linear independence, span, basis in abstract vector spaces. Towards defining the dimension of a vector space.
+					</td>
+					<td>
+					L17 [<a href="files/MA1111-1819/1111L17handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW7 [<a href="files/MA1111-1819/1111HW7.pdf">PDF</a>]
+					HW6 solutions [<a href="files/MA1111-1819/1111A6.pdf">PDF</a>]
+					</td>
+				    </tr>
+				    <tr>
+					<td>
+					22 (8/11)
+					</td>
+      				<td>
+      				A linearly independent set of vectors cannot be larger than a complete set. Finite-dimensional vector spaces. Dimension. Coordinates. Transition matrix between different bases.
+					</td>
+					<td>
+					L18 [<a href="files/MA1111-1819/1111L18handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					23 (9/11)
+					</td>
+      				<td>
+      				Examples of computing coordinates and transition matrices. Transformation of coordinates via the transition matrix (covariance and contravariance). Multiplicative property of transition matrices. Linear maps.
+					</td>
+					<td>
+					L19 [<a href="files/MA1111-1819/1111L19handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					24 (9/11)
+					</td>
+      				<td>
+      				Matrix of a linear map. Composition of linear maps corresponds to the matrix product. Examples of linear maps and their matrices.
+					</td>
+					<td>
+					L20 [<a href="files/MA1111-1819/1111L20handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW8 [<a href="files/MA1111-1819/1111HW8.pdf">PDF</a>]
+					HW7 solutions [<a href="files/MA1111-1819/1111A7.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					25 (15/11)
+					</td>
+      				<td>
+      				Fourth tutorial.
+					</td>
+					<td>
+					</td>
+					<td>
+					T4 [<a href="files/MA1111-1819/1111T4.pdf">PDF</a>]
+					T4 solutions [<a href="files/MA1111-1819/1111TA4.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					26 (16/11)
+					</td>
+      				<td>
+      				Change of the matrix of a linear map under change of coordinates. Relation to elementary row operations. Change of the matrix of linear operator. Invariance of trace and determinant. Example. 
+					</td>
+					<td>
+					L21 [<a href="files/MA1111-1819/1111L21handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					27 (16/11)
+					</td>
+      				<td>
+      				Eigenvalues and eigenvectors. Application: a closed formula for Fibonacci numbers.
+					</td>
+					<td>
+					L22 [<a href="files/MA1111-1819/1111L22handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW9 [<a href="files/MA1111-1819/1111HW9.pdf">PDF</a>]
+					HW8 solutions [<a href="files/MA1111-1819/1111A8.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					28 (22/11)
+					</td>
+      				<td>
+      				Fifth tutorial.	
+					</td>
+					<td>
+					</td>
+					<td>
+					T5 [<a href="files/MA1111-1819/1111T5.pdf">PDF</a>]
+					T5 solutions [<a href="files/MA1111-1819/1111TA5.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					29 (23/11)
+					</td>
+      				<td>
+      				Eigenvalues and eigenvectors. A linear operator with <i>n</i> distinct eigenvalues is diagonalisable. Examples. Omnipresence of eigenvectors in applications of linear algebra. 
+					</td>
+					<td>
+					L23 [<a href="files/MA1111-1819/1111L23handout.pdf">PDF</a>]
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					30 (23/11)
+					</td>
+      				<td>
+      				Eigenvalues and eigenvectors. Example: the ``porridge problem''.
+					</td>
+					<td>
+					L24 [<a href="files/MA1111-1819/1111L24handout.pdf">PDF</a>]
+					</td>
+					<td>
+					HW9 solutions [<a href="files/MA1111-1819/1111A9.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					31 (29/11)
+					</td>
+      				<td>
+      				Sixth tutorial: practice exam questions.	
+					</td>
+					<td>
+					</td>
+					<td>
+					Past exam questions [<a href="files/MA1111-1819/1111PrevExams.pdf">PDF</a>]
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					32 (30/11)
+					</td>
+      				<td>
+      				Revision of the module.
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				      </tr>
+				      <tr>
+					<td>
+					33 (30/11)
+					</td>
+      				<td>
+      				Revision of the module.
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				      </tr>
+</table>
+
+		</div>  
+
+			<div class="item">
+			  <h1>My other materials</h1>
+You may consult <a href="https://www.maths.tcd.ie/~vdots/teaching/MA1111-1516.html">the webpage</a> of this module from when I was teaching it in 2015/16. I kept all lecture notes, as well as problems and solutions there. Material might change a little bit in this version of the module. Also, most of the problems this time around would be different; in any case, checking out the solutions should be the last resort if you are really struggling: there will be no solutions waiting for you when you take the exam. 
+			</div>
+
+			<div class="item">
+			  <h1>Exam materials: sample papers, actual papers</h1>
+
+See course materials, mainly. Work through solutions to home assignments and tutorials, since exam papers will rely on fluency in the respective methods. Generally, check out past papers from the previous 4-5 years <b><a href="https://www.tcd.ie/academicregistry/exams/past-papers/annual/">here</a></b>. 
+			</div>
+
+			<div class="item">
+			  <h1>Textbooks</h1>
+This module does not follow any particular textbook. When needed, consult "Elementary Linear Algebra" by Anton and Rorres, and "Algebra" by Michael Artin. There will also be online lecture notes for many of the lectures. For more examples and exercises (very useful to get a grip of the material), check out the free online linear algebra book by Jim Hefferon available at <a href="http://joshua.smcvt.edu/linearalgebra/">this http URL</a>. Finally, more advanced reading for the second half of this module is "Linear algebra problem book" by Halmos.
+			</div>
+
+			<div class="item">
+			  <h1>Assessment</h1>
+			    <p>The final mark is 80%*final exam mark + 20%*home assignments result. </p>
+			</div>
+
+
+			<div class="item">
+				<h1>Disclaimer</h1>
+				  The person who is solely responsible for the choice of content on this page is Vladimir Dotsenko. Any views expressed here do not necessarily represent the official views of Trinity College Dublin.
+			</div>
+
+
+		<div class="footer">&copy; 2014 Vladimir Dotsenko. Template design by <a href="http://templates.arcsin.se">Arcsin</a></div>
+
+	</div>	
+
+</div>
+
+
+</body>
+
+</html>
+

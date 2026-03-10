@@ -1,0 +1,192 @@
+# Operadic Buchberger Configuration File
+# --------------------------------------
+
+# Actions:
+#  normalise  -- find a Groebner basis
+#  count      -- count the number of normal forms
+#                  with respect to the given theory
+
+actions: normalise count
+
+# --------------------------------------
+# Parameters for counting
+
+# Count limit
+#   for each arity up to the given limit,
+#   the number of normal forms will be counted
+
+count limit: 4
+
+
+# --------------------------------------
+# Parameters for normalisation
+
+# Output options
+#  initial    -- show the initial theory
+#  new        -- show new rewrite rules at each stage
+#  final      -- show final theory
+#  evaluation -- show the evaluation of each critical pair
+
+output:         initial final evaluation
+
+
+# Time limit (seconds)
+#   computation will be abandoned after this time
+#   leave empty for no time limit
+
+time limit:	
+
+
+# Arity limit (number of leaves)
+#   computation will be abandoned upon reaching this arity
+#   leave empty for no arity limit
+
+arity limit: 3
+
+
+# --------------------------------------
+# Operad specification
+
+# Field
+# the default field over which polynomials are taken is the rationals
+# to use a finite integer field instead, give a (prime) number here 
+
+field:
+
+
+# Operad type
+#  choose one of: shuffle / asymmetric
+#  and one of:    signed / unsigned
+
+operad type: shuffle unsigned
+#asymmetric unsigned
+#shuffle unsigned
+# shuffle unsigned 
+#asymmetric unsigned
+#shuffle signed
+
+
+# Measure 
+# a measure for ordering trees is given by a sequence of:
+#   ar               -- arity
+#   deg              -- degree or depth
+#   lex              -- lexicographic path order
+#   perm   / permr   -- (reverse) leaf order
+#   deglex / deglexr -- (reverse) degree-lexicographic path order
+#   weighted
+
+measure: deglex perm
+
+# weighted deglexr perm
+
+# Signature
+# give a number of operators defined by
+#   str  (optional)        -- a name
+#   num  (optional)        -- a weight (for use in a weighted ordering)
+#   +    (optional)        -- a positive homological degree
+#   (num), [num], or {num} -- bracket type and arity (num)
+# name, weight and homological degree may be given in any order
+# names (if given) must be unique
+
+signature: z(2) xp(2) x(2) t(2) y(2) yp(2) 
+
+#0x(2) 0xp(2) 1y(2) 1yp(2) 0z(2) 1t(2) 2f(2) 2g(2) 2h(2) 2fp(2) 2gp(2) 2hp(2)
+
+#(3) [2]
+
+#1f(1) 1a(2) 1b(2) 1[2] 
+
+# 1[1] 1f(2) 1g(2) 1(2)
+
+#1b(2) 1bb(2) 0aa(2) 0a(2)    
+# c(2) d(2) 
+# 1f(1) 1a(2) 1b(2) 1[2] 
+#2[2] 1(2) 5f(2) 5g(2) 
+# 0{2} a0{2} x1(2) ax1(2)  5[2] 5(2) b5[2] c5(2)
+# 1f(2) 1g(2) 1h(2) 1[2] 1(1)  
+#g(2) gg(2) a(2) aa(2)
+#{2} [2] (2)   
+# f(2) ff(2) a(2) aa(2)
+#1d(2) 1e(2) 1f(2) 1g(2) 5gg(2) 5ff(2) 0a(2) 0aa(2) 
+# {2}
+# 0[2]
+# 0[2] 1(2)
+# 0a(3) 0b(3) 0c(3) 0d(3) 0e(3) 0f(3) 0g(3) 0h(3) 0k(3)  1[2] 1(2)  
+#0f(3) 0g(3) 0h(3) 1(2)  
+#0+(2) 1+[3] 1+{4}
+
+
+# --------------------------------------
+# Theory specification
+
+
+# Theory
+# a theory is given by a series of polynomials (each on a new line)
+# a polynomial is given by a sum of monomials,
+#    m1 (+/-) m2 (+/-) ... (+/-) mn
+# a monomial is given by
+#    x or x/y  -- an integer or rational multiplier (optional)
+#    tree      -- a tree over the given signature
+# a tree is given by one of
+#    num or *               -- a leaf
+#    str (tree ... tree)    -- the name (str) is optional; if absent,
+#    str [tree ... tree]    -- the operator is identified by bracket type
+#    str {tree ... tree}    -- the number of (tree)s must match the arity
+#                               given by the signature
+# for shuffle trees, leaves must be a permutation of 1..n
+# for asymmetric trees, all leaves are reset to *
+
+theory:
+
+-z(z(1 2) 3) + z(z(1 3) 2) + z(1 z(2 3))
+
+-z(x(1 3) 2) + x(z(1 2) 3) - z(1 x(2 3))
+-z(x(1 2) 3) + x(z(1 3) 2) - z(1 xp(2 3))
+-z(xp(1 2) 3) + z(xp(1 3) 2) + xp(1 z(2 3))
+
+-x(x(1 2) 3) + x(x(1 3) 2) + x(1 z(2 3)) - x(1 xp(2 3)) + x(1 x(2 3))
+-xp(z(1 2) 3) + xp(xp(1 2) 3) - xp(x(1 2) 3) + x(xp(1 3) 2) - xp(1 xp(2 3))
+-xp(z(1 3) 2) + xp(xp(1 3) 2) - xp(x(1 3) 2) + x(xp(1 2) 3) - xp(1 x(2 3))
+
+z(1 t(2 3))
+z(t(1 3) 2)
+z(t(1 2) 3)
+
+z(yp(1 2) 3)
+z(yp(1 3) 2)
+z(y(1 2) 3)
+z(y(1 3) 2)
+z(1 y(2 3))
+z(1 yp(2 3))
+
+xp(1 t(2 3))
+x(t(1 2) 3)
+x(t(1 3) 2)
+
+x(1 t(2 3)) + x(1 yp(2 3)) + x(1 y(2 3))
+xp(t(1 3) 2) + xp(yp(1 3) 2) + xp(y(1 3) 2) 
+xp(t(1 2) 3) + xp(yp(1 2) 3) + xp(y(1 2) 3)
+
+x(y(1 2) 3)
+x(yp(1 2) 3)
+x(y(1 3) 2)
+x(yp(1 3) 2) 
+xp(1 y(2 3))
+xp(1 yp(2 3))
+
+-t(t(1 2) 3) + t(1 t(2 3)) 
+-t(t(1 3) 2) + t(1 t(2 3)) 
+
+-yp(t(1 3) 2) - yp(yp(1 3) 2) - yp(y(1 3) 2) + yp(1 y(2 3))
+-yp(t(1 2) 3) - yp(yp(1 2) 3) - yp(y(1 2) 3) + yp(1 yp(2 3)) 
+-y(y(1 2) 3) + y(1 t(2 3)) + y(1 yp(2 3)) + y(1 y(2 3))
+-y(y(1 3) 2) + y(1 t(2 3)) + y(1 yp(2 3)) + y(1 y(2 3)) 
+-y(yp(1 2) 3) + yp(1 y(2 3)) 
+-y(yp(1 3) 2) + yp(1 yp(2 3)) 
+
+-t(yp(1 3) 2) + yp(1 t(2 3)) 
+-t(y(1 2) 3) + t(1 yp(2 3))
+-t(y(1 3) 2) + t(1 y(2 3)) 
+-t(yp(1 2) 3) + yp(1 t(2 3)) 
+-y(t(1 3) 2) + t(1 yp(2 3)) 
+-y(t(1 2) 3) + t(1 y(2 3)) 

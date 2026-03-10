@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://latex.now.sh/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" />
+  <title>Page math&eacute;matique de Vladimir DOTSENKO</title>
+  <meta name="description"
+    content="Page math&eacute;matique de Vladimir DOTSENKO" />
+  <meta name="keywords" content="latex.css,css library,class-less css,latex css" />
+  <meta property="og:title" content="LaTeX.css" />
+  <meta property="og:url" content="http://irma.math.unistra.fr/~dotsenko" />
+  <meta property="og:description"
+    content="Page math&eacute;matique de Vladimir DOTSENKO" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="prism/prism.css" />
+  <style>
+  #myDIV {
+  width: 100%;
+}
+</style>
+</head>
+
+<body id="top" class="libertinus">
+  <header>
+    <center><h2><span class="latex"> Homepage of </h2></center>
+    <p class="author">
+      Vladimir DOTSENKO 
+    </p>
+  </header>
+
+<p>
+It is not uncommon these days for researchers in mathematics to use their professional homepage to express their thoughts on current political and  societal affairs. In my opinion, these matters are much less important than our duty to Mathematics, and there is just one principle that informs my  professional activity, which is best summarized by the following quotiation from <i>Mathematics as Profession and Vocation</i> by Yuri Ivanovich Manin: "arguably the primary social function of science, as social institution in our days, consists in stopping the frenetic activity of post-industrial society".
+</p>
+
+<br>
+        <table border="1">
+          <tbody>
+          <tr>
+          <td>
+  I am a professor at <a href="http://www.irma.math.unistra.fr"> IRMA (Institut de Recherche Mathématique Avancée, UMR 7501 de l'Université de Strasbourg et du CNRS)</a>. I coordinate the research masters in mathematics, and I organize the monthly colloquium of IRMA. I belong to the team <a href="https://irma.math.unistra.fr/teams/art.html">ART: Algèbre, représentations, topologie</a> , and I am one of the organizers of the <a href="https://irma.math.unistra.fr/seminaires/seminaire-art.html">seminar</a> of the team. I am also a member of the national research network <a href="https://gdrhtop.apps.math.cnrs.fr/">GDR 2875: théorie de l'homotopie et applications</a> and of several subdivisions of the national research network <a href="https://mygdr.hosted.lip6.fr/accueilGDR/1/10">GDR 673: informatique mathématique</a>. <p> 
+
+  I am a junior member of <a href="https://www.iufrance.fr/">Institut Universitaire de France</a> (2021-2026), the local coordinator of the project <a href="https://anr-highagt.pages.math.cnrs.fr/">Higher Algebra, Geometry, and Topology</a> of <a href="http://www.anr.fr/">Agence Nationale de la Recherche</a> (2021-2025), and the international coordinator of the Math-AmSud project HHMA (23-MATH-06) supported by CNRS, MINCYT, and ANII (2024-2025).</li>
+
+
+          </td>
+          <td>
+      <figure>
+        <img src="img/face2face.jpg"
+          loading="lazy" alt="Rewriting" width="250" />
+        <figcaption>
+          <center>(photo credits: <a href="http://www.facebook.com/face2faceIRL">Face2FaceIRL</a>)</center>
+        </figcaption>
+      </figure>
+          </td>
+          </tr>
+
+          </tbody>
+        </table>
+
+
+  <nav role="navigation" class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#carriere">Academic path</a></li>
+      <li><a href="#domaines">Research areas</a></li>
+      <li><a href="#social">My professional online presence</a></li>
+      <li><a href="#publi">Publications</a>
+      		<ol>
+              <li><a href="#publi2">Books</a></li>
+              <li><a href="#publi3">Preprints</a></li>
+              <li><a href="#publi4">Refereed journal papers</a></li>
+              <li><a href="#publi5">Conference proceedings</a></li>
+              <li><a href="#publi6">Expository publications</a></li>
+              <li><a href="#publi7">Translations</a></li>
+              <li><a href="#publi8">Preprints superseded by other articles or not intended for publication</a></li>
+            </ol>
+      </li>
+      <li><a href="#soft">Software: Gröbner bases for operads</a></li>
+      <li><a href="events.html">Events and some past talks</a></li>
+      <li><a href="#students">Research associates and assistants</a></li>
+      <li><a href="teaching.html">Teaching and outreach</a></li>
+      <li><a href="#contact">Contact information</a></li>
+    </ol>
+  </nav>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const toggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script async src="prism/prism.js"></script>
+
+  <script async defer data-domain="latex.now.sh" src="https://plausible.io/js/plausible.js"></script>
+  <script>
+  function ToggleVisibility(divId) {
+  var x = document.getElementById(divId);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+         }
+  }
+  </script>
+
+</body>
+
+<main>
+    <article>
+      <h2 id="carriere">Academic path</h2>
+      <ul>
+    <li>Professor, <a href="http://www.unistra.fr">Universit&eacute; de Strasbourg</a>, since 2019.</li>
+		<li> Assistant professor (tenured) above the merit bar, <a href="http://www.maths.tcd.ie">Trinity College Dublin</a>, 2017-2019.</li>
+		<li> Solomon Lefschetz Chair of mathematics, <a href="http://www.math.cinvestav.mx/en">CINVESTAV-IPN</a>, 2016-2017.</li>
+		<li> Assistant professor (tenured), <a href="http://www.maths.tcd.ie">Trinity College Dublin</a>,  2012-2016.</li>
+		<li> Research fellow (in the research group of Norbert Poncin), <a href="http://wwwfr.uni.lu/recherche/fstc/mathematics_research_unit">University of Luxembourg</a>, 2011-2012.</li>
+		<li>Assistant professor (non-tenured), Trinity College Dublin, 2010-2011.</li>
+		<li>Research fellow (in the research group of Denjoe O'Connor), <a href="http://www.stp.dias.ie">Dublin Institute for Advanced Studies</a>, 2008-2010.</li>
+		<li>Lecturer in mathematics (non-tenured), Trinity College Dublin, 2007-2008.</li>
+		<li>Postgraduate studies: 
+      <ul>
+        <li>Marie Curie pre-doctoral research fellow (mentored by Andras Szenes), <a href="https://math.bme.hu/?language=en">Institute of Mathematics, Budapest Technical University</a>, 2006. 
+      </li>  
+      <li>PhD student in Mathematics (supervised by Boris L. Feigin and Mikhail V. Zaicev) at the <a href="http://halgebra.math.msu.su/wiki/doku.php">Chair of Higher Algebra, Department of Mechanics and Mathematics, Moscow State University</a>, 2003-2007.
+      </li> 
+      </ul> 
+    </li>
+    <li>Undergraduate studies: 
+		<ul>
+    <li>Diploma in Mathematics and Applied Mathematics (5 year program, mentored by Mikhail V. Zaicev), <a href="http://www.en.math.msu.su/">Department of Mechanics and Mathematics, Moscow State University</a>, 1998-2003. </li>
+		<li>Diploma in Mathematics (5 year program, mentored by Boris L. Feigin), <a href="http://ium.mccme.ru/english/index.html">Independent University of Moscow</a>, 1997-2003.</li>
+    </ul>
+    </li>
+		<li>High school studies, <a href="http://sch57.ru/index.en.html">mathematical high school 57, Moscow</a>, 1995-1998.</li>
+       </ul>
+      <h2 id="domaines">Research areas</h2>
+      <p>My principal research area is homotopical algebra and its applications. I am also very interested in operads, Gröbner bases, combinatorics, homological algebra, representation theory and deformation theory. The following image shows some relationships between these areas: it proves that the Jacobi identity, the defining property of Lie algebras, forms a Gröbner basis of the shuffle operad corresponding to the operad controlling Lie algebras. </p>
+      <figure>
+        <img src="img/rewrite-new.png"
+          loading="lazy" alt="Rewriting" width="600" height="400" />
+      </figure>
+      <p>Of course, one sees some combinatorics, since the calculus of shuffle operads uses labelled rooted trees. There is also some homological algebra, since this calculation gives the shortest proof of the Koszul property of the operad of Lie algebras (this property means that the Quillen homology of this operad is well behaved). That latter property guarantees that various general methods are available to study the homotopy category of differential graded Lie algebras; these methods are central in modern deformation theory. Representation theory appears here as well: the Koszul property allows, via a computation of Euler characteristics of certain chain complexes, to describe the representations of symmetric groups in each component <em>Lie(n)</em>, and then to describe the action of the general linear group on the free Lie algebra.  </p>
+
+	  <p>I am often asked to suggest introductory reading on the operad theory. Here are two suggestions. First, there is a remarkable recent monograph <a href="http://www.springer.com/mathematics/algebra/book/978-3-642-30361-6">Algebraic operads</a> by Jean-Louis Loday and Bruno Vallette. Second, in collaboration with Murray Bremner, I wrote the book <a href = "https://www.crcpress.com/Algebraic-Operads-An-Algorithmic-Companion/Bremner-Dotsenko/9781482248562">Algebraic operads: an algorithmic companion</a> which may be a bit more accessible to the reader without a steady background in homology and homotopy.</p>
+
+    <h2 id="social">My professional online presence</h2>
+        <ul>
+          <li> Preprint repositories
+          <ul>
+          <li> The arXiv collection of my papers is <a href="http://arxiv.org/a/dotsenko_v_1.html">here</a>.</li>
+          <li> The HAL collection of my papers is <a href="https://hal.archives-ouvertes.fr/search/index/q/*/authIdHal_s/vladimir-dotsenko">here</a>.</li>
+          </ul></li>
+          <li> Review databases
+          <ul>
+          <li> My zbMath entry is <a href="https://zbmath.org/authors/?q=dotsenko.vladimir-v">here</a>.</li>
+          <li> My MathSciNet entry is <a href="https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=795082">here</a>.</li>
+          </ul></li>
+          <li> Researchers profiles 
+          <ul> 
+          <li> My ORCID profile is <a href="https://orcid.org/0000-0002-6949-5166">here</a>.</li>
+          <li> My Google Scholar profile is <a href="http://scholar.google.lu/citations?user=dolOMNYAAAAJ&hl=en">here</a>.</li>
+          <li> My entry on Theses.fr is <a href="https://www.theses.fr/fr/271991445">here</a>.</li>
+          </ul></li>
+          <li> Finally, my MathOverflow profile is <a href="https://mathoverflow.net/users/1306/vladimir-dotsenko">here</a>.</li>
+      </ul>
+      Note: any other researcher profiles featuring my work that you may find online are either obsolete or maintained without my involvement or authorization.  
+
+	  <h2 id="publi">Publications</h2>
+
+    For most of the publications listed below, clicking on the button "Details" will give you a couple of sentences containing some information about the mathematical content of that publication.
+
+		<h3 id="publi2">Books</h3>
+				<ol>
+			      <li>Vladimir Dotsenko, Sergey Shadrin, and Bruno Vallette, <i><a href="https://doi.org/10.1017/9781108963800">Maurer-Cartan methods in deformation theory: the twisting procedure</a></i>, London Mathematical Society Lecture Note Series, 488, Cambridge University Press, 2023, 186 pp.
+            <button onclick="ToggleVisibility('book2')">Details</button>
+            <div id="book2" style="display: none";>
+            A nearly final version, free to view and download for personal use only (not for re-distribution, re-sale or use in derivative works), is available as <a href="https://arxiv.org/abs/2212.11323">arXiv:2212.11323</a>.
+            </div>            
+            </li> 
+          <center>
+          <figure>      
+            <a href="TwistingProcedure.pdf">
+            <img width="200" src="covercup.jpg"></a>
+          </figure>
+          </center>
+            </li>
+			      <li>Murray Bremner and Vladimir Dotsenko, <i><a href="https://www.crcpress.com/Algebraic-Operads-An-Algorithmic-Companion/Bremner-Dotsenko/p/book/9781482248562">Algebraic Operads: An Algorithmic Companion</a></i>, Chapman and Hall / CRC Press, 2016, xviii+365 pp.
+			      	<center>
+					<figure>			
+						<a href="AlgebraicOperadsAnAlgorithmicCompanion.pdf">
+			 			<img width="200" src="BD.jpg"></a>
+			 		</figure>
+			 		</center>
+			      </li>
+
+			    </ol>
+		<h3 id="publi3">Preprints</h3>
+				<ol>
+            <li>Vladimir Dotsenko and Andrea Solotar, Algebraic versions of <b>T</b><sup>2</sup> and of <b>P</b><sup>1</sup>&times;<b>P</b><sup>1</sup> and Hochschild cohomology, preprint <a href="https://arxiv.org/abs/2511.18073">arXiv:2511.18073</a>.
+            <button onclick="ToggleVisibility('prep7')">Details</button>
+            <div id="prep7" style="display: none";>
+            We examine the Hochschild cohomology for triangular algebras that capture some aspects of geometry and topology of the torus and of the quadric surface, and for deformations of these algebras. In particular, this shows that the cup product on Hochschild cohomology of a triangular algebra does not generally follow the intuition coming from monomial algebras.
+            </div>            
+            </li> 
+            <li>Frédéric Chapoton and Vladimir Dotsenko, Yamaguti algebras and noncrossing partitions, preprint <a href="https://arxiv.org/abs/2510.03148">arXiv:2510.03148</a>.
+            <button onclick="ToggleVisibility('prep6')">Details</button>
+            <div id="prep6" style="display: none";>
+            Recently, Das defined a new type of algebras, the Yamaguti algebras, which are supposed to serve as envelopes of Lie-Yamaguti algebras appearing naturally in differential geometry. We show that the nonsymmetric operad of Yamaguti algebras admit a simple combinatorial description via noncrossing partitions without singleton blocks.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Eduardo Hoefel, Sergey Shadrin, Grigory Solomadin, Operads of moduli spaces of points in <b>C</b><sup>d</sup> revisited, preprint <a href="https://arxiv.org/abs/2509.20331">arXiv:2509.20331</a>.
+            <button onclick="ToggleVisibility('prep5')">Details</button>
+            <div id="prep5" style="display: none";>
+            We study the operad structure on the homology of moduli spaces of pointed rooted trees of d-dimensional projective spaces, introduced by Chen, Gibney and Krashen a couple of decades ago. We describe this operad by generators and relations, show that it is homotopy Koszul, exhibit a Givental-type action on representations of that operad, and prove that this operad represents the homotopy quotient of the operad of chains of S<sup>1</sup>-framed little 2d-disks by its natural circle action. Our approach also sheds new light on the d=1 case, revealing a new combinatorial way to write the original Givental formulas.           
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko and Irvin Roy Hentzel, On the conjecture of Kashuba and Mathieu about free Jordan algebras, preprint <a href="https://arxiv.org/abs/2507.00437">arXiv:2507.00437</a>.
+            <button onclick="ToggleVisibility('prep4')">Details</button>
+            <div id="prep4" style="display: none";>
+            Kashuba and Mathieu proposed a conjecture on vanishing of Lie algebra homology, implying a description of the GL<sub>d</sub>-module structure of the free d--generated Jordan algebra. Their conjecture relies on a functorial version of the Tits-Kantor-Koecher construction that builds Lie algebras out of Jordan algebras. In this note, we summarize new intricate computational data concerning free Jordan algebras and explain why, despite a lot of overwhelmingly positive evidence, the conjecture of Kashuba and Mathieu is not true.            
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko and Sergey Mozgovoy, Global Weyl modules for thin Lie algebras are finite-dimensional, preprint <a href="https://arxiv.org/abs/2411.17550">arXiv:2411.17550</a>.
+            <button onclick="ToggleVisibility('prep3')">Details</button>
+            <div id="prep3" style="display: none";>
+            The notion of Weyl modules, both local and global, goes back to Chari and Pressley in the case of affine Lie algebras, and has been extensively studied for various Lie algebras graded by root systems. We extend that definition to a certain class of Lie algebras graded by weight lattices and prove that if such a Lie algebra satisfies a natural "thinness" condition, then already the global Weyl modules are finite-dimensional. Our motivating example of a thin Lie algebra is the Lie algebra of polynomial Hamiltonian vector fields on the plane vanishing at the origin. We also introduce stratifications of categories of modules over such Lie algebras and identify the corresponding strata categories.            
+            </div>            
+            </li> 
+            <li>Yvain Bruned and Vladimir Dotsenko, Chain rule symmetry for singular SPDEs, preprint <a href="https://arxiv.org/abs/2403.17066">arXiv:2403.17066</a>.
+            <button onclick="ToggleVisibility('prep2')">Details</button>
+            <div id="prep2" style="display: none";>
+              We characterise the chain rule symmetry for the geometric stochastic heat equations in the full subcritical regime for Gaussian and non-Gaussian noises. We show that the renormalised counter-terms that give a solution invariant under changes of coordinates are generated by iterations of covariant derivatives. The result was known only for space-time white noises, with a very specific proof that so far could not be extended to the general case. The key idea of the present paper is to change the perspective on several levels and to use ideas coming from operad theory and homological algebra. Concretely, we introduce the operad of Christoffel trees that captures the counter-terms of the renormalised equation; our main new insight is to describe the space of invariant terms homologically, using a suitable perturbation of the differential of the operadic twisting of that operad. As a consequence, we obtain the correct renormalisation for the quasi-linear KPZ equation in the subcritical regime completing the programme started by Hairer and Gerencser. Previously, the main algebraic tool used in the study of singular SPDEs were Hopf algebras of decorated trees; our work shows that operad theory and homological algebra add new powerful tools with immediate applications to open problems that were out of reach by other methods.
+            </div>            
+            </li> 
+            <li>Yvain Bruned and Vladimir Dotsenko, Novikov algebras and multi-indices in regularity structures, preprint <a href="https://arxiv.org/abs/2311.09091">arXiv:2311.09091</a>.
+            <button onclick="ToggleVisibility('prep1')">Details</button>
+            <div id="prep1" style="display: none";>
+            In this work, we introduce multi-Novikov algebras, a multi-operation generalisation of Novikov algebras, and show that the multi-indices recently introduced in the context of singular
+            stochastic partial differential equations can be interpreted as free multi-Novikov algebras. This is parallel to the fact that decorated rooted trees arising in the context of regularity structures are related to free
+            multi-pre-Lie algebras.            
+            </div>            
+            </li> 
+			    </ol>
+
+
+		<h3 id="publi4">Refereed journal papers</h3>
+			    <ol>
+            <li>Vladimir Dotsenko, Fine structures inside the PreLie operad revisited, <i>Journal of Combinatorial Algebra</i>, in press, <a href="https://doi.org/10.4171/jca/115">online version on the publisher's website.</a>
+            <button onclick="ToggleVisibility('art59')">Details</button>
+            <div id="art59" style="display: none";>
+              In this paper I proved a conjecture of Chapoton from 2010 stating that the pre-Lie operad, as a Lie algebra in the symmetric monoidal category of linear species, is freely generated by the free operad on the species of cyclic Lie elements. Also available as preprint <a href="https://arxiv.org/abs/2306.08425">arXiv:2306.08425</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Evgeny Feigin, Piotr Kucharski, Markus Reineke, Categorification of quiver diagonalization and Koszul algebras, to appear in <i>Publications of the Research Institute for Mathematical Sciences</i>.
+            <button onclick="ToggleVisibility('art58')">Details</button>
+            <div id="art58" style="display: none";>
+              This paper proves a conjecture that originates in earlier work of three of the authors. Concretely, they associated a supercommutative quadratic algebra to each symmetric quiver, and used it to obtain a new proof of positivity of motivic Donaldson-Thomas invariants. It was furthermore conjectured that for each symmetric quiver such an algebra is Koszul. In this work, the linking and unlinking operations on symmetric quivers of Ekholm, Longhi and the third author are liften to the level of quadratic algebras, and used to prove the Koszulness conjecture. Also available as preprint <a href="https://arxiv.org/abs/2402.12768">arXiv:2402.12768</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, On the conjecture of Shang about free alternative algebras, to appear in <i>Israel Journal of Mathematics</i>.
+            <button onclick="ToggleVisibility('art57')">Details</button>
+            <div id="art57" style="display: none";>
+            Kashuba and Mathieu proposed a conjecture on vanishing of some components of the homology of certain Lie algebras, implying a description of the GL<sub>d</sub>-module structure of the free d-generated Jordan algebra. Their conjecture relies on a functorial version of the Tits-Kantor-Koecher construction that builds Lie algebras out of Jordan algebras. Recently, Shang used a functorial construction of Allison, Benkart and Gao that builds Lie algebras out of alternative algebras to propose another conjecture on vanishing of some components of the homology of certain Lie algebras, implying a description of the GL<sub>d</sub>-module structure of the free d-generated alternative algebra. In this note, the conjecture of Shang is disproved. In comparison, the existing evidence for the Kashuba-Mathieu conjecture appeared overwhelmingly positive; however, it is also disproved in an upcoming paper of mine (joint with Hentzel). Also available as preprint <a href="https://arxiv.org/abs/2503.16074">arXiv:2503.16074</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko and Sergey Shadrin, Hidden structures behind ambient symmetries of the Maurer-Cartan equation, to appear in <i>Homology, Homotopy and Applications</i>.
+            <button onclick="ToggleVisibility('art56')">Details</button>
+            <div id="art56" style="display: none";>
+            For every differential graded Lie algebra, one can define two different group actions on the Maurer-Cartan elements: the ubiquitous gauge action and the action of Lie-infinity isotopies of the algebra, which we call the ambient action.
+            In this paper, we explain how the assertion of gauge triviality of a homologically trivial ambient action relates to the calculus of dendriform, Zinbiel, and Rota-Baxter algebras, and to Eulerian idempotents. In particular, we exhibit new relationships between these algebraic structures and the operad of rational functions defined by Loday. Also available as preprint <a href="https://arxiv.org/abs/2407.06589">arXiv:2407.06589</a>.           
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Derived operations satisfy standard identities, <i>Bulletin of Brazilian Mathematical Society, New Series</i>, 57 (2026), article 6, <a href="https://doi.org/10.1007/s00574-025-00494-z">online version on the publisher's website</a>. See also <a href="https://rdcu.be/eZ7fd">a free view-only version available as a part of "Springer Nature Content Sharing Initiative"</a>.
+            <button onclick="ToggleVisibility('art55')">Details</button>
+            <div id="art55" style="display: none";>
+            A derived operation is a bilinear operation on a commutative associative algebra defined intrinsically out of its product and several derivations of the product. We show that operators of left (or right) multiplications of a derived operation always satisfy a "standard identity" of certain order. In particular, it implies that each Rankin-Cohen bracket of modular forms, as well as each higher bracket of Kontsevich's universal deformation quantization formula for Poisson structures on $\mathbb{R}^n$, satisfies standard
+            identities. Also available as preprint <a href="https://arxiv.org/abs/2511.01410">arXiv:2511.01410</a>.   
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Nilpotence, weak nilpotence, and the nil property in the nonassociative world: computations and conjectures, <i>Experimental mathematics</i>, 34 (2025), no. 4, 745-753, <a href="https://doi.org/10.1080/10586458.2024.2410985">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art54')">Details</button>
+            <div id="art54" style="display: none";>
+            This paper summarizes some results, both rigorously mathematical and computational, showing unexpected relations between different identities expressing nilpotence in nonassociative algebras, and presents a number of conjectural generalizations and related questions. Also available as preprint <a href="https://arxiv.org/abs/2306.11362">arXiv:2306.11362</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko and Paul Laubie, Volume preservation of Butcher series methods from the operad viewpoint, <i>International Mathematics Research Notices</i>, Volume 2025, no. 13, Paper No. rnaf187, 22 pp., <a href="https://doi.org/10.1093/imrn/rnaf187">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art53')">Details</button>
+            <div id="art53" style="display: none";>
+            We study a coloured operad involving rooted trees and directed cycles of rooted trees that generalizes the operad of rooted trees of Chapoton and Livernet. We describe all the relations between the generators of a certain suboperad of that operad, and compute the Chevalley-Eilenberg homology of two naturally arising differential graded Lie algebras. This allows us to give short and conceptual new proofs of two important results on Butcher series methods of numerical solution of ODEs: absence of volume-preserving integration schemes and the acyclicity of the aromatic bicomplex, the key step in a complete classification of volume-preserving integration schemes using the so called aromatic Butcher series. Also available as preprint <a href="https://arxiv.org/abs/2411.14143">arXiv:2411.14143</a>.          
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Stable homology of Lie algebras of derivations and homotopy invariants of wheeled operads, <i>Compositio Mathematica</i>, 161 (2025), no. 4, 756–799, <a href="https://doi.org/10.1112/S0010437X25007055">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art52')">Details</button>
+            <div id="art52" style="display: none";>
+              This paper (finally!) makes precise some ideas of mine going back to 2008. Its main theorem computes, for any augmented operad <i>O</i>, the stable homology of the Lie algebra of derivations of the free algebra <i>O(V)</i> with twisted bivariant coefficients, which, in turn, can be used to prove uniform mixed representation stability for the homology with constant coefficients of the positive part of that Lie algebra; the answer is expressed in terms of the homology of wheeled bar construction of <i>O</i>. Similarly to how cyclic homology of an algebra <i>A</i> may be viewed as an additive version of the algebraic <i>K</i>-theory of <i>A</i>, these results hint at the additive <i>K</i>-theoretic nature of the wheeled bar construction. Also available as preprint <a href="https://arxiv.org/abs/2311.18594">arXiv:2311.18594</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko and Iryna Kashuba, The three graces in the Tits-Kantor-Koecher category, <i>Orbita Mathematicae</i>, 2 (2025), no. 1, 83-101, <a href="https://doi.org/10.2140/om.2025.2.83">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art51')">Details</button>
+            <div id="art51" style="display: none";>
+            We study various properties of free associative, commutative associative, and Lie algebras in the category of <i>sl<sub>2</sub></i>-modules that decompose into a direct sum of copies of the trivial and the adjoint module; this category is not symmetric monoidal but yet has the corresponding algebraic structures available, and that discrepancy leads to various interesting phenomena. Also available as preprint <a href="https://arxiv.org/abs/2310.20635">arXiv:2310.20635</a>
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko and Bekzat Zhakhayev, Distributive lattices of varieties of Novikov algebras, <i>manuscripta mathematica</i>, 176 (2025), article 29, <a href="https://doi.org/10.1007/s00229-025-01629-8">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art50')">Details</button>
+            <div id="art50" style="display: none";>
+            In this paper, we classify quotients of the Novikov operad with a distributive lattice of ideals (resolving, in the case of Novikov algebras, an old open problem of Bokut), and use these results to classify Koszul operads of which the Novikov operad is a quotient. Also available as preprint <a href="https://arxiv.org/abs/2406.19319">arXiv:2406.19319</a>.           
+            </div>            
+            </li> 
+
+            <li>Vladimir Dotsenko and Sergey Mozgovoy, DT invariants from vertex algebras, <i>Journal of the Institute of Mathematics of Jussieu</i>, 24 (2025), no. 1, 291-339, <a href="http://doi.org/10.1017/S1474748024000288">online version on the publisher's website</a>.            
+            <button onclick="ToggleVisibility('art49')">Details</button>
+            <div id="art49" style="display: none";>
+               In this article, we relate the Cohomological Hall Algebra of a symmetric quiver to the vertex universal enveloping algebra of the free vertex Lie algebra whose locality function is obtained from the incidence matrix of the quiver. This leads to a new proof of positivity of the refined Donaldson-Thomas invariants of symmetric quivers, and to an interpetation of the constructions from my paper "Parking functions and vertex operators" in terms of modules over the Cohomological Hall Algebra constructed by Hans Franzen. Also available as preprint <a href="https://arxiv.org/abs/2108.10338">arXiv:2108.10338</a>
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko and Xabier Garc&iacute;a-Mart&iacute;nez, A characterisation of Lie algebras using ideals and subalgebras,  <i>Bulletin of London Mathematical Society</i>, 56 (2024), no. 7, 2408-2423, <a href="http://doi.org/10.1112/blms.13062">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art48')">Details</button>
+            <div id="art48" style="display: none";>
+              This is the fourth item in a series of articles where Gr&ouml;bner bases for commutative associative algebras are used to study parametric families of operads. In it, we give an easy categorical criterion for Lie algebras among various classes of nonassociative algebras. Also available as preprint <a href="https://arxiv.org/abs/2210.14550">arXiv:2210.14550</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko and Pedro Tamaroff, Tangent complexes and the Diamond Lemma, <i>Bulletin of Mathematical Sciences</i>, 14 (2024), no. 3, article 2350013, <a href="https://doi.org/10.1142/s1664360723500133">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art47')">Details</button>
+            <div id="art47" style="display: none";>
+              In this paper, we explain that the celebrated Diamond Lemma criterion for confluence of rewriting systems can be viewed as the Maurer-Cartan equation in a certain differential graded Lie algebra. Also available as preprint <a href="https://arxiv.org/abs/2010.14792">arXiv:2010.14792</a>. 
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Adam Keilthy, and Denis Lyskov, Reconnectads, <i>Algebraic Combinatorics</i>, <b>7</b> (2024) no. 3, pp. 801-842, <a href="https://doi.org/10.5802/alco.347">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art46')">Details</button>
+            <div id="art46" style="display: none";>
+              In this article, we introduce and study the notion of a reconnectad which encodes the combinatorics of the torus orbits in the toric varieties of graph associahedra. Also available as preprint <a href="https://arxiv.org/abs/2211.15754">arXiv:2211.15754</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Sergey Shadrin, Arkady Vaintrob, and Bruno Vallette, Deformation theory of cohomological field theories, <i>Journal f&uuml;r die reine und angewandte Mathematik</i>, <b>809</b> (2024), 91-157, <a href="https://doi.org/10.1515/crelle-2023-0098">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art45')">Details</button>
+            <div id="art45" style="display: none";>
+              This is the fourth item in a series of articles on a homotopical interpretation of the Givental action on cohomological field theories. We develop deformation theory for algebras over modular operads, and then enrich that theory specifically for cohomological field theories. As a by-product we find a remarkable deformation group containing both the Givental group and the Grothendieck-Teichm&uuml;ller group. Also available as preprint <a href="http://arxiv.org/abs/2006.01649">arXiv:2006.01649</a>
+            </div>            
+            </li>
+            <li>Vladimir Dotsenko and Anton Khoroshkin, Homotopical rigidity of the pre-Lie operad, <i>Proceedings of the American Mathematical Society</i>, <b>152</b> (2024), no. 4, Pages 1355–1371, <a href="http://dx.doi.org/10.1090/proc/15627">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art44')">Details</button>
+            <div id="art44" style="display: none";>
+              In this article, several chain complexes of decorated trees are shown to be acyclic, implying many different ways in which the pre-Lie operad is rigid, and proving the Lie-theoretic version of the Deligne conjecture. 
+               Also available as preprint <a href="https://arxiv.org/abs/2002.12918">arXiv:2002.12918</a>.
+            </div>            
+            </li>
+            <li>Vladimir Dotsenko, Identities for deformation quantizations of almost Poisson algebras, <i>Letters in Mathematical Physics</i>, <b>114</b>, 4, (2024), <a href="https://doi.org/10.1007/s11005-023-01748-x">online version on the publisher's website</a>. See also <a href="https://rdcu.be/dt8wM">a free view-only version available as a part of "Springer Nature Content Sharing Initiative"</a>. 
+            <button onclick="ToggleVisibility('art43')">Details</button>
+            <div id="art43" style="display: none";>
+              We discuss the problem of deformation quantization of the so called almost Poisson algebras, which are algebras with a commutative associative product and an antisymmetric bracket which is a bi-derivation but does not necessarily satisfy the Jacobi identity. We show  that, by contrast with Poisson algebras, the only reasonable category of algebras in which almost Poisson algebras can be quantized is isomorphic to the category of almost Poisson algebras itself. Also available as preprint <a href="https://arxiv.org/abs/2306.08351">arXiv:2306.08351</a>
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko and Ois&iacute;n Flynn-Connolly, Three Schur functors related to pre-Lie algebras, <i>Mathematical Proceedings of Cambridge Philosophical Society</i>, <b>176</b> (2024), Issue 2, Pages 441-458, <a href="https://doi.org/10.1017/S0305004123000580">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art42')">Details</button>
+            <div id="art42" style="display: none";>
+              In this paper, a general criterion for Poincar&eacute;-Birkhoff-Witt type theorems for modules of K&auml;hler differentials of operadic algebras is given, and combinatorial formulas for Schur functors of universal pre-Lie envelopes of Lie algebras, of universal multiplicative envelopes of pre-Lie algebras, and of K&auml;hler differentials of pre-Lie algebras are given. Also available as preprint <a href="https://arxiv.org/abs/2001.00780">arXiv:2001.00780</a>.
+            </div>            
+            </li>
+            <li>Vladimir Dotsenko and Ualbai Umirbaev, An effective criterion for Nielsen-Schreier varieties, <i>International Mathematics Research Notices</i>, Volume 2023, Issue 23, Pages 20385–20432, <a href="https://doi.org/10.1093/imrn/rnad092">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art41')">Details</button>
+            <div id="art41" style="display: none";>
+              We use Gr&ouml;bner bases for operads to give a powerful criterion for all subalgebras of free algebras over a given operad to be free. Prior to our work, only six examples of operads generated by one binary operation and possessing this property were found during the period of 75 years that this question was considered; our results exhibit infinitely many such operads. Also available as preprint <a href="https://arxiv.org/abs/2205.05364">arXiv:2205.05364</a>.
+            </div>            
+            </li> 
+            <li>Appendix to: Anton Khoroshkin, Pedro Tamaroff, Derived Poincar&eacute;-Birkhoff-Witt theorems, <i>Letters in Mathematical Physics</i>, <b>113</b>, 15 (2023), <a href="https://doi.org/10.1007/s11005-022-01617-z">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art40')">Details</button>
+            <div id="art40" style="display: none";>
+              In this paper, derived invariance of universal enveloping algebras of Lie algebras is established, and homotopy equivalence of several different notions of the universal enveloping algebra of a Lie-infinity algebra is proved. I contributed an appendix to this paper explaining how to construct models of filtered operads out of models of their associated graded ones via homological perturbation. 
+              Also available as preprint <a href="https://arxiv.org/abs/2003.06055">arXiv:2003.06055</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Nurlan Ismailov, and Ualbai Umirbaev, Polynomial identities in Novikov algebras, <i>Mathematische Zeitschrift</i>, <b>303</b>, 60 (2023), <a href="https://doi.org/10.1007/s00209-023-03231-8">online version on the publisher's website</a>. See also <a href="https://rdcu.be/c5njd">a free view-only version available as a part of "Springer Nature Content Sharing Initiative"</a>.
+            <button onclick="ToggleVisibility('art39')">Details</button>
+            <div id="art39" style="display: none";>
+              This is the first paper where the finite basis property for systems of algebraic identities is studied using the theory of operads. We show that every Novikov algebra satisfying nontrivial identities satisfies a certain "standard" identity, and that every system of identities of Novikov algebras over a field of zero characteristic follows from a finite number of them.
+              Also available as preprint <a href="https://arxiv.org/abs/2209.13662">arXiv:2209.13662</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Vincent G&eacute;linas, and Pedro Tamaroff, Finite generation for Hochschild cohomology of Gorenstein monomial algebras, <i>Selecta Mathematica</i>, <b>29</b>, 14 (2023), <a href="https://doi.org/10.1007/s00029-022-00817-8">online version on the publisher's website</a>. See also <a href="https://rdcu.be/c1L5n">a free view-only version available as a part of "Springer Nature Content Sharing Initiative"</a>.
+            <button onclick="ToggleVisibility('art38')">Details</button>
+            <div id="art38" style="display: none";>
+              In this article, a result of Pedro Tamaroff who computed A-infinity structures on Ext-algebras of monomial algebras is used to establish that for monomial algebras the FG property of Snashall-Solberg is equivalent to the Gorenstein property. 
+              Also available as preprint <a href="https://arxiv.org/abs/1909.00487">arXiv:1909.00487</a>.
+            </div>            
+            </li>
+            <li>Vladimir Dotsenko, Sergey Shadrin, and Pedro Tamaroff, Generalized cohomological field theories in the higher order formalism, <i>Communications in Mathematical Physics</i>, <b>399</b> (2023), 1439-1500, <a href="https://doi.org/10.1007/s00220-022-04577-6">online version on the publisher's website</a>. See also <a href="https://rdcu.be/c1Vn6">a free view-only version available as a part of "Springer Nature Content Sharing Initiative"</a>.
+            <button onclick="ToggleVisibility('art37')">Details</button>
+            <div id="art37" style="display: none";>
+              In this article, a question of Andrey Losev from a couple of decades ago is answered: higher order generalizations of Batalin-Vilkovisky algebras are studied, and algebraic consequences of homotopical triviality of the generalized BV operator are determined.
+              Also available as preprint <a href="https://arxiv.org/abs/2112.06015">arXiv:2112.06015</a>.
+            </div>            
+            </li>
+            <li>Murray Bremner and Vladimir Dotsenko, Associator dependent algebras and Koszul duality, <i>Annali di Matematica Pura et Applicata (1923-)</i>, 202 (2023), 1233-1254, <a href="https://doi.org/10.1007/s10231-022-01278-8">online version on the publisher's website</a>. See also <a href="https://rdcu.be/cX29H">a free view-only version available as a part of "Springer Nature Content Sharing Initiative"</a>.
+            <button onclick="ToggleVisibility('art36')">Details</button>
+            <div id="art36" style="display: none";>
+              This is the third item in a series of articles where Gr&ouml;bner bases for commutative associative algebras are used to study parametric families of operads. We classify Koszul operads among those that encode associator dependent algebras and use it to answer a question of Jean-Louis Loday about Koszul operads that act on the algebra of octonions.
+               Also available as preprint <a href="https://arxiv.org/abs/2203.11142">arXiv:2203.11142</a>.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, Evgeny Feigin, and Markus Reineke, Koszul algebras and Donaldson-Thomas invariants, <i>Letters in Mathematical Physics</i>, <b>112</b>, 106 (2022), <a href="https://doi.org/10.1007/s11005-022-01604-4">online version on the publisher's website</a>. See also <a href="https://rdcu.be/cX8gn">a free view-only version available as a part of "Springer Nature Content Sharing Initiative"</a>.
+            <button onclick="ToggleVisibility('art35')">Details</button>
+            <div id="art35" style="display: none";>
+              In this article, a new proof of positivity of the refined Donaldson-Thomas invariants of symmetric quivers are given, through a new construction of nontrivial Lie superalgebras out of symmetric quivers.
+               Also available as preprint <a href="https://arxiv.org/abs/2111.07588">arXiv:2111.07588</a>.
+            </div>            
+            </li>  
+			      <li>Vladimir Dotsenko and Lo&iuml;c Foissy, Operads of enriched pre-Lie algebras and freeness theorems, <i>Journal of Combinatorial Algebra</i>,  6 (2022), 23-44, <a href="http://dx.doi.org/10.4171/JCA/58">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art34')">Details</button>
+            <div id="art34" style="display: none";>
+              In this article, a generalization of the notion of a pre-Lie algebra arising in work of Damien Calaque and Thomas Willwacher was studied, and some freeness theorems were proved and used to establish new Poincar&eacute;-Birkhoff-Witt type theorems.
+               Also available as preprint <a href="https://arxiv.org/abs/2002.10536">arXiv:2002.10536</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Homotopy invariants for <span style="text-decoration: overline">M</span><sub>0,n</sub> via Koszul duality,  <i>Inventiones Mathematicae</i>,  228 (2022), 77-106, <a href="https://doi.org/10.1007/s00222-021-01081-x">online version on the publisher's website</a>. See also <a href="https://rdcu.be/cz4Za">a free view-only version available as a part of "Springer Nature Content Sharing Initiative"</a>.
+            <button onclick="ToggleVisibility('art33')">Details</button>
+            <div id="art33" style="display: none";>
+              In this article, a conjecture of Yuri Ivanovich Manin from early 2000s about Koszulness of cohomology rings of the genus zero Deligne-Mumford compactifications is proved. The approach relies on shuffle operads and Gr&ouml;bner bases for operads in a very meaningful and nontrivial way. 
+               Also available as preprint <a href="http://arxiv.org/abs/1902.06318">arXiv:1902.06318</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko and Pedro Tamaroff, Endofunctors and Poincar&eacute;-Birkhoff-Witt theorems,  <i>International Mathematics Research Notices</i>, Volume 2021, Issue 16, Pages 12670–12690, <a href="http://doi.org/10.1093/imrn/rnz369">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art32')">Details</button>
+            <div id="art32" style="display: none";>
+              In this article, operads and, more generally, monads are used to give a short and elegant criterion for the Poincar&eacute;-Birkhoff-Witt type theorems to hold for various left adjoint functors.
+               Also available as preprint <a href="http://arxiv.org/abs/1804.06485">arXiv:1804.06485</a>.
+            </div>            
+            </li>
+			      <li>Murray Bremner and Vladimir Dotsenko, Distributive laws between the operads Lie and Com,  <i>International Journal of Algebra and Computation</i>,  30 (2020), no. 8, 1565-1576, <a href="http://doi.org/10.1142/S021819672050054X">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art31')">Details</button>
+            <div id="art31" style="display: none";>
+              This is the second item in a series of articles where Gr&ouml;bner bases for commutative associative algebras are used to study parametric families of operads. In this case, we classify distributive laws between the Lie operad and the commutative operad, answering a question of Vladimir Hinich.
+               Also available as preprint <a href="https://arxiv.org/abs/1912.05519">arXiv:1912.05519</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Martin Markl, and Elisabeth Remm, Veronese powers of operads and pure homotopy algebras,  <i>European Journal of Mathematics</i>, 6 (2020), 829-863, <a href="http://doi.org/10.1007/s40879-019-00351-6">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art30')">Details</button>
+            <div id="art30" style="display: none";>
+              In this article, several different generalizations of the notion of a Veronese power of a graded associative algebra are introduced and studied in the case of operads. 
+               Also available as preprint <a href="https://arxiv.org/abs/1706.04893">arXiv:1706.04893</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Martin Markl, and Elisabeth Remm, Non-Koszulness of operads and positivity of Poincar&eacute; series,  <i>Documenta Mathematica </i> 25 (2020), 309-328, <a href="http://dx.doi.org/10.25537/dm.2020v25.309-328">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art29')">Details</button>
+            <div id="art29" style="display: none";>
+              In this article, some explicit unexpected homology classes of certain operads are constructed. One of these operads gives one of the simplest possible examples showing the limitations of the positivity criterion for Koszul operads.
+               Also available as preprint <a href="http://arxiv.org/abs/1604.08580">arXiv:1604.08580</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Word operads and admissible orderings,  <i>Applied Categorical Structures</i>, 28 (2020), 595-600, <a href="http://doi.org/10.1007/s10485-020-09591-0">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art28')">Details</button>
+            <div id="art28" style="display: none";>
+              In this article, a combinatorial construction of Samuele Giraudo is used to explain in a conceptual way the partial ordering of elements of shuffle operads discovered by Eric Hoffbeck, and to generalize it in a very extensive way, creating a partial order out of each ordered monoid. 
+               Also available as preprint <a href="http://arxiv.org/abs/1907.03992">arXiv:1907.03992</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Functorial PBW theorems for post-Lie algebras,  <i>Communications in Algebra</i>, 48 (2020), no. 5, 2072-2080, <a href="http://doi.org/10.1080/00927872.2019.1710173">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art27')">Details</button>
+            <div id="art27" style="display: none";>
+              In this article, a formalism developed in my work with Pedro Tamaroff (published a bit later) is used to prove some new functorial Poincar&eacute;-Birkhoff-Witt type theorems.
+               Also available as preprint <a href="http://arxiv.org/abs/1903.04435">arXiv:1903.04435</a>.
+            </div>            
+            </li>
+			      <li>Murray Bremner and Vladimir Dotsenko, Boardman-Vogt tensor products of absolutely free operads,  <i>Proceedings of the Royal Society of Edinburgh Section A</i>, 150 (2020), no. 1, 367-385, <a href="http://doi.org/10.1017/prm.2018.60">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art26')">Details</button>
+            <div id="art26" style="display: none";>
+              In this article, Boardman-Vogt tensor products of certain operads are computed; the proofs are achieved via an interesting blend of combinatorics and homotopy theory.
+               Also available as preprint <a href="http://arxiv.org/abs/1705.04573">arXiv:1705.04573</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Sergey Shadrin, and Bruno Vallette, Toric varieties of Loday's associahedra and noncommutative cohomological field theories, <i>Journal of Topology</i> 12 (2019), 463-535, <a href="https://doi.org/10.1112/topo.12091">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art25')">Details</button>
+            <div id="art25" style="display: none";>
+              This is an article where noncommutative counterparts of Gerstenhaber algebras, Batalin-Vilkovisky algebras, hypercommutative algebras and gravity algebras are introduced and studied. The key geometric feature of the article is a very elaborate study of toric varieties whose dual polytopes are the Loday's realizations of associahedra. 
+               Also available as preprint <a href="http://arxiv.org/abs/1510.03261">arXiv:1510.03261</a>. 
+            </div>            
+            </li>
+		   	      <li>Vladimir Dotsenko, Algebraic structures of F-manifolds via pre-Lie algebras,  <i>Annali di Matematica Pura et Applicata (1923-)</i>, 198 (2019), no. 2, 517-527, <a href="https://doi.org/10.1007/s10231-018-0787-z">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art24')">Details</button>
+            <div id="art24" style="display: none";>
+              This is an article which highlights an operadic side of the notion of an F-manifold of Hertling and Manin; using Gr&ouml;bner bases for operads and basic homotopical algebra, I established that F-manifold algebras may be viewed as degeneration of pre-Lie algebras.
+               Also available as preprint <a href="https://arxiv.org/abs/1706.07340">arXiv:1706.07340</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, A Quillen adjunction between algebras and operads, Koszul duality, and the Lagrange inversion formula,  <i>International Mathematics Research Notices</i>, Vol. 2017: article ID rnx257, 21 pages, <a href="http://doi.org/10.1093/imrn/rnx257">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art23')">Details</button>
+            <div id="art23" style="display: none";>
+              This is an article where a new construction of operads from associative algebras is introduced, and used to furnish some counterexamples in the operad theory as well as to give a new proof of the Lagrange inversion formula.
+               Also available as preprint <a href="http://arxiv.org/abs/1606.08222">arXiv:1606.08222</a>.
+            </div>            
+            </li>
+			      <li>Murray Bremner and Vladimir Dotsenko, Classification of regular parametrised one-relation operads,  <i>Canadian Journal of Mathematics</i>, 69 (2017), no. 5, 992-1035, <a href="http://doi.org/10.4153/CJM-2017-018-3">online version on the publisher's website</a>. Online addendum to the article showing the relevant symbolic calculations: <a href="BDaddendum.pdf">PDF version</a>, <a href="BDaddendum.txt">text version</a>.
+            <button onclick="ToggleVisibility('art22')">Details</button>
+            <div id="art22" style="display: none";>
+              This is the first item in a series of articles where Gr&ouml;bner bases for commutative associative algebras are used to study parametric families of operads, in this case to classify regular operads in a family of operads introduced by Loday. 
+               Also available as preprint <a href="http://arxiv.org/abs/1507.06372">arXiv:1507.06372</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko and Soutrik Roy Chowdhury, Anick resolution and Koszul algebras of finite global dimension,  <i>Communications in Algebra</i>, 45 (2017), no. 12, 5380-5383, <a href="http://doi.org/10.1080/00927872.2017.1307383">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art21')">Details</button>
+            <div id="art21" style="display: none";>
+              In this article, a beautiful general construction of David Anick is used to study certain algebras discovered by Natalia Iyudu and Stanislav Shkarin.
+               Also available as preprint <a href="http://arxiv.org/abs/1605.06983">arXiv:1605.06983</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Sergey Shadrin, and Bruno Vallette, Pre-Lie deformation theory,  <i>Moscow Mathematical Journal</i>, 16 (2016), no. 3, 505-543, <a href="http://www.mathjournals.org/mmj/2016-016-003/2016-016-003-003.html">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art20')">Details</button>
+            <div id="art20" style="display: none";>
+              This is an article where integration of complete pre-Lie algebras arising in operadic deformation problems was developed and used. One of the consequences is that the celebrated Homotopy Transfer Theorem is interpreted in terms of the action of the group of "gauge symmetries".
+               Also available as preprint <a href="http://arxiv.org/abs/1502.03280">arXiv:1502.03280</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko and Norbert Poncin, A tale of three homotopies,  <i>Applied Categorical Structures</i>, 24 (2016), Issue 6, 845-873, <a href="http://doi.org/10.1007/s10485-015-9407-x">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art19')">Details</button>
+            <div id="art19" style="display: none";>
+              This is an article where several different notions of homotopies between morphisms of homotopy algebras (over a Koszul operad) were compared, filling some gaps in the existing literature. 
+               Also available as preprint <a href="http://arxiv.org/abs/1208.4695">arXiv:1208.4695</a>.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Sergey Shadrin, and Bruno Vallette, Givental action and trivialisation of circle action,  <i>Journal of &Eacute;cole Polytechnique - Mathematiques</i>, 2 (2015), 213-246, <a href="http://doi.org/10.5802/jep.23">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art18')">Details</button>
+            <div id="art18" style="display: none";>
+              This is the third item in a series of articles on a homotopical interpretation of the Givental action on cohomological field theories. In it, we proved that on the level of genus zero operations, the Givental action of cohomological field theories is given by the change of trivialization of a homotopically trivial circle action, confirming a claim of Maxim Kontsevich.
+               Also available as preprint <a href="http://arxiv.org/abs/1304.3343">arXiv:1304.3343</a>.
+            </div>            
+            </li> 
+			      <li>Vladimir Dotsenko, Sergey Shadrin, and Bruno Vallette, De Rham cohomology and homotopy Frobenius manifolds,  <i>Journal of European Mathematical Society</i>, 17 (2015), 535-547, <a href="http://dx.doi.org/10.4171/JEMS/510">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art17')">Details</button>
+            <div id="art17" style="display: none";>
+              This is the second item in a series of articles on a homotopical interpretation of the Givental action on cohomological field theories. In it, we establish a general criterion for degeneration of the spectral sequence of a multicomplex and use it to give new constructions of cohomological field theories.
+               Also available as preprint <a href="http://arxiv.org/abs/1203.5077">arXiv:1203.5077</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko and James Griffin, Cacti and filtered distributive laws,  <i>Algebraic and Geometric Topology</i>, 14 (2014), issue 6, 3185-3225, <a href="http://dx.doi.org/10.2140/agt.2014.14.3185">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art16')">Details</button>
+            <div id="art16" style="display: none";>
+              This is an article where a certain operad arising from geometric group theory was studied, and the general notion of a filtered distributive law between two operads was introduced.
+               Also available as preprint <a href="http://arxiv.org/abs/1109.5345">arXiv:1109.5345</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, Dual alternative algebras in characteristic three, <i>Communications in Algebra</i>, 42 (2014), Issue 5, 1911-1920, <a href="http://doi.org/10.1080/00927872.2012.751110">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art15')">Details</button>
+            <div id="art15" style="display: none";>
+              This is an article where Gr&ouml;bner bases for operads are used to study a certain quotient of the associative operad over a field of positive characteristic. 
+               Also available as preprint <a href="http://arxiv.org/abs/1111.2289">arXiv:1111.2289</a>. 
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko and Anton Khoroshkin, Quillen homology for operads via Gr&ouml;bner bases,  <i>Documenta Mathematica</i>, 18 (2013), 707-747, <a href="http://www.elibm.org/article/10000276">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art14')">Details</button>
+            <div id="art14" style="display: none";>
+              This is an article where Gr&ouml;bner bases for operads are used to construct free resolutions for nonsymmetric and shuffle operads, and are applied to prove new results about symmetric operads. 
+               Also available as preprint <a href="http://arxiv.org/abs/1203.5053">arXiv:1203.5053</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko and Bruno Vallette, Higher Koszul duality for associative algebras, <i>Glasgow Mathematical Journal</i>, 55 (2013), issue A, 55-74, <a href=" http://doi.org/10.1017/S0017089513000505">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art13')">Details</button>
+            <div id="art13" style="display: none";>
+              This article builds upon the work of He and Lu on A-infinity structures on the Ext-algebras of N-Koszul algebras. We described an "economic" operad which acts on such Ext-algebras, and explained how to present these algebras by generators and relations. There is an unfortunate gap in one of the proofs for which a short addendum is forthcoming (essentially, Gr&ouml;bner bases for nonsymmetric operads with constants are generally not available, and one has to use rewriting systems instead). 
+               Also available as preprint <a href="http://arxiv.org/abs/1201.6509">arXiv:1201.6509</a>. 
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Sergey Shadrin, and Bruno Vallette, Givental group action on topological field theories and homotopy Batalin-Vilkovisky algebras.  <i>Advances in Mathematics</i> 236 (2013) 224–256, <a href="http://doi.org/10.1016/j.aim.2013.01.003">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art12')">Details</button>
+            <div id="art12" style="display: none";>
+              This is the first item in a series of articles on a homotopical interpretation of the Givental action on cohomological field theories. In it, we relate the notion of a commutative homotopy Batalin-Vilkovisky algebra of Olga Kravchenko to the Givental action. 
+               Also available as preprint <a href="http://arxiv.org/abs/1112.1432">arXiv:1112.1432</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko and Anton Khoroshkin, Shuffle algebras, homology, and consecutive pattern avoidance,  <i>Algebra &amp; Number Theory</i>, 7 (2013), No. 3, 673–700, <a href="http://dx.doi.org/10.2140/ant.2013.7.673">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art11')">Details</button>
+            <div id="art11" style="display: none";>
+              This is an article using homological methods to resolve an open problem on consecutive patterns in permutations; it also brought back to attention of combinatorialists the powerful "cluster method" of Goulden and Jackson.
+               Also available as preprint <a href="http://arxiv.org/abs/1109.2690">arXiv:1109.2690</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, Pattern avoidance in labelled trees, <i>S&eacute;minaire Lotharingien de Combinatoire</i>, B67b (2012), 27 pp., <a href="https://www.mat.univie.ac.at/~slc/wpapers/s67dotsenko.html">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art10')">Details</button>
+            <div id="art10" style="display: none";>
+              This is an article introducing a new combinatorial notion needed to understand normal forms in shuffle operads.
+               Also available as preprint <a href="http://arxiv.org/abs/1110.0844">arXiv:1110.0844</a>. 
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko and Anton Khoroshkin, Gr&ouml;bner bases for operads,  <i>Duke Mathematics Journal</i>, Volume 153, Number 2 (2010), 363-396, <a href="http://dx.doi.org/10.1215/00127094-2010-026">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art9')">Details</button>
+            <div id="art9" style="display: none";>
+              This is an article where the notion of a shuffle operad was introduced and used to develop the theory of Gr&ouml;bner bases for operads. As we learned later, the monoidal structure for which shuffle operads are monoids was noticed by Andr&eacute; Joyal in the 1980s, but it was not expected to be very consequential.
+               Also available as preprint <a href="http://arxiv.org/abs/0812.4069">arXiv:0812.4069</a>. 
+            </div>            
+            </li>
+			      <li> Sergey Cherkis, Vladimir Dotsenko, and Christian Saemann, Superspace Actions for Multiple M2-Branes, Metric 3-Algebras and their Classification,  <i>Physical Review D</i>, 79, 086002 (2009), 11 pp., <a href="http://dx.doi.org/10.1103/PhysRevD.79.086002">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art8')">Details</button>
+            <div id="art8" style="display: none";>
+              This is an article written with my colleagues who are theoretical physicists; my very algebraic contribution to it is the classification result for certain ternary operations in Section III. 
+               Also available as preprint <a href="http://arxiv.org/abs/0812.3127">arXiv:0812.3127</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, Parking functions and vertex operators,  <i>Selecta Mathematica</i>, 14: 2 (2009), 229-245, <a href="http://dx.doi.org/10.1007/s00029-008-0067-7">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art7')">Details</button>
+            <div id="art7" style="display: none";>
+              This is an article where certain vertex operator algebras were used to construct vector spaces whose dimensions are given by Catalan numbers and various related combinatorial sequences. More than ten years later, these constructions were related to representations of the Cohomological Hall Algebra in my work with Sergey Mozgovoy.
+               Also available as preprint <a href="http://arxiv.org/abs/0809.3683">arXiv:0809.3683</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, Compatible associative products and trees,  <i>Algebra &amp; Number Theory</i>, 3 (2009), no. 5, 567-586, <a href="http://doi.org/10.2140/ant.2009.3.567">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art6')">Details</button>
+            <div id="art6" style="display: none";>
+              This is an article where a combinatorial construction of free algebras with two compatible associative products was given.
+               Also available as preprint <a href="http://arxiv.org/abs/0809.1773">arXiv:0809.1773</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, An operadic approach to deformation quantization of compatible Poisson brackets, I, <i>Journal of Generalised Lie Theory and Applications</i>, 1 (2007), No. 2, 107-115, <a href="https://www.hilarispublisher.com/abstract/an-operadic-approach-to-deformation-quantizationof-compatible-poisson-brackets-i-27413.html">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art5')">Details</button>
+            <div id="art5" style="display: none";>
+              This article is one of the three items that constitute the core of my PhD thesis. A deformation of the bi-Hamiltonian operad is introduced in it, analogously to how the Poisson operad deforms into the associative operad.
+               Also available as preprint <a href="http://arxiv.org/abs/math/0611154">arXiv:math/0611154</a>.
+            </div>            
+            </li>
+			      <li> Mikhail Bershtein, Vladimir Dotsenko, and Anton Khoroshkin, Quadratic algebras related to the bihamiltonian operad,  <i>International Mathematics Research Notices</i> Vol. 2007: article ID rnm122, 30 pages, <a href="http://doi.org/10.1093/imrn/rnm122">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art4')">Details</button>
+            <div id="art4" style="display: none";>
+              This article is one of the three items that constitute the core of my PhD thesis. Operadic methods are used in it to study certain generalisations of Orlik-Solomon algebras introduced by Anatol Kirillov; these algebras turn out to be related to the operad of compatible Lie brackets.
+               Also available as preprint <a href="http://arxiv.org/abs/math/0607289">arXiv:math/0607289</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko and Anton Khoroshkin, Character formulas for the operad of two compatible brackets and for the bi-Hamiltonian operad, <i>Functional Analysis and Its Applications</i>, 41 (2007), no.1, 1-17, <a href="http://dx.doi.org/10.1007/s10688-007-0001-3">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art3')">Details</button>
+            <div id="art3" style="display: none";>
+              This article is one of the three items that constitute the core of my PhD thesis. The bi-Hamiltonian operad and the operad of compatible Lie brackets are introduced and studied in it. The proof of the Koszul property for the operad of compatible Lie brackets that is given in this article is incorrect, the first attempt to repair it (by Strohmayer) was also incorrect; to the best of my knowledge, the first complete proof of this result is given in the paper "Gr&ouml;bner bases for operads".
+               Also available as preprint <a href="http://arxiv.org/abs/math/0605233">arXiv:math/0605233</a>.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, Homology of the Lie algebra of vector fields on a line with coefficients in symmetric powers of its adjoint representation, <i>Functional analysis and its applications</i>, 40 (2006), no.2, 13-19, <a href="http://dx.doi.org/10.1007/s10688-006-0015-2">online version on the publisher's website</a>. 
+            <button onclick="ToggleVisibility('art2')">Details</button>
+            <div id="art2" style="display: none";>
+              This article is a write-up of my third year undergraduate project, where the result announced in the talk by Boris Feigin at the 1990 ICM was proved. My proof heavily uses the specifics of the Lie algebra of vector fields on a line; later this result was generalized to all dimensions by Anton Khoroshkin.
+            </div>            
+            </li>
+			      <li> V.Dotsenko, N.Iyudu, and D.Korytin, An analogue of the Magnus problem for associative algebras, <i>Journal of Mathematical Sciences (New York)</i>, 131, no. 6 (2005), 6023-6026, <a href="http://dx.doi.org/10.1007/s10958-005-0457-8">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('art1')">Details</button>
+            <div id="art1" style="display: none";>
+              This article, on which I collaborated as an undergraduate, uses an argument analogous to the celebrated Diamond Lemma to solve an analogue of a result of Magnus for groups in the case of associative algebras.
+               Also available as preprint <a href="http://arxiv.org/abs/0801.3009">arXiv:0801.3009</a>. 
+            </div>
+
+            </li>
+			    </ol>
+		<h3 id="publi5">Conference proceedings</h3>
+				<ol>
+            <li>Vladimir Dotsenko, Stable Lie algebra homology and wheeled operads, <em>Oberwolfach Reports</em>, 21 (2024), no. 3, 2294-2297, <a href="https://doi.org/10.4171/owr/2024/39">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('conf8')">Details</button>
+            <div id="conf8" style="display: none";>
+              This is an overview of the paper "Stable homology of Lie algebras of derivations and homotopy invariants of wheeled operads" for experts in algebraic topology and higher structures.
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, A generalization of cyclic homology for operads, <em>Oberwolfach Reports</em>, 21 (2024), no. 2, 1104-1106, <a href="https://doi.org/10.4171/owr/2024/20">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('conf7')">Details</button>
+            <div id="conf7" style="display: none";>
+              This is an overview of the paper "Stable homology of Lie algebras of derivations and homotopy invariants of wheeled operads" for experts in Hochschild and cyclic homology.            
+            </div>            
+            </li> 
+            <li>Vladimir Dotsenko, The cohomology of <span style="text-decoration: overline">M</span><sub>0,n+1</sub> is Koszul (a proof of a conjecture of Manin), <em>Oberwolfach Reports</em>, 18 (2021), no. 1, 239-241, <a href="https://doi.org/10.4171/owr/2021/5">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('conf6')">Details</button>
+            <div id="conf6" style="display: none";>
+              This is an announcement of the proof of a conjecture of Manin that later appeared in full in the paper "Homotopy invariants for <span style="text-decoration: overline">M</span><sub>0,n</sub> via Koszul duality".
+            </div>            
+            </li> 
+			      <li>Murray Bremner and Vladimir Dotsenko, Distributive laws between the operads Lie and Com: extended abstract.  In: Maple in Mathematics Education and Research. MC 2019. <em>Communications in Computer and Information Science</em>, vol. 1125, 349-352, <a href="https://doi.org/10.1007/978-3-030-41258-6_29">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('conf5')">Details</button>
+            <div id="conf5" style="display: none";>
+              This is an announcement of the classification of distributive laws between the operad Lie and the commutative operad.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, Operads, <em>Oberwolfach Reports</em>, 11 (2014), no. 1, 601-604, <a href="https://doi.org/10.4171/owr/2014/11">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('conf4')">Details</button>
+            <div id="conf4" style="display: none";>
+              This is a short summary of an introductory lecture on operads that I gave in a mini-workshop in Oberwolfach.
+            </div>            
+            </li>	
+			      <li> Vladimir Dotsenko and Mikael Vejdemo Johansson, Implementing Gr&ouml;bner bases for operads, <a href="http://arxiv.org/abs/0909.4950">arXiv:0909.4950</a>, <em>S&eacute;minaires et Congr&egrave;s</em>, Volume 26 (2011), 77-98, <a href="https://smf.emath.fr/publications/comment-implementer-les-bases-de-grobner-pour-les-operades">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('conf3')">Details</button>
+            <div id="conf3" style="display: none";>
+              This is one of the two articles describing the first implementation of Gr&ouml;bner bases for operads. To the best of my knowledge, that implementation is not continuously supported (some improvements are made in <a href="https://github.com/Dronte/Operads">this implementation</a> by Andrey Lando), it is superseded by <a href="https://irma.math.unistra.fr/~dotsenko/#soft">this implementation.</a> 
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, Freeness theorems for operads via Gr&ouml;bner bases, <a href="http://arxiv.org/abs/0907.4958">arXiv:0907.4958</a>, <em>S&eacute;minaires et Congr&egrave;s</em>, Volume 26 (2011), 61-76, <a href="https://smf.emath.fr/publications/theoremes-sur-la-liberte-de-certaines-operades-par-les-bases-de-grobner">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('conf2')">Details</button>
+            <div id="conf2" style="display: none";>
+              This is the first article outlining applications of Gr&ouml;bner bases outside homotopical algebra: criteria for freeness of modules over operads are given. 
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko and Mikael Vejdemo Johansson, Operadic Gr&ouml;bner bases: an implementation, <em>Lecture Notes in Computer Science</em> 6327 (2010), 249-252, <a href="https://doi.org/10.1007/978-3-642-15582-6_42">online version on the publisher's website</a>.
+            <button onclick="ToggleVisibility('conf1')">Details</button>
+            <div id="conf1" style="display: none";>
+              This is one of the two articles describing the first implementation of Gr&ouml;bner bases for operads. To the best of my knowledge, that implementation is not continuously supported (some improvements are made in <a href="https://github.com/Dronte/Operads">this implementation</a> by Andrey Lando), it is superseded by <a href="https://irma.math.unistra.fr/~dotsenko/#soft">this implementation</a>.
+            </div>            
+            </li>
+			    </ol>
+
+		<h3 id="publi6">Expository publications</h3>
+				<ol> 
+            <li>Vladimir Dotsenko, Alexander Shen, and Mark Spivakovsky, Foreword to the special issue dedicated to Rafail Kalmanovich Gordin, <i>Arnold Mathematical Journal</i>, 5 (2019), 1-4, <a href="https://doi.org/10.1007/s40598-019-00117-8">Online version on the publisher's website</a>.            
+            <button onclick="ToggleVisibility('expo12')">Details</button>
+            <div id="expo12" style="display: none";>
+              This is a foreword to the two special issues of Arnold Mathematical Journal co-edited by myself and Mark Spivakovsky and dedicated to Rafail Gordin.
+            </div>            
+            </li> 
+            <li> Vladimir Dotsenko, Richard Timoney <a href="https://www.irishmathsoc.org/bull78/MeetingReports/IMS2016.pdf">The 27th Annual IMS Scientific Meeting, TCD</a>, <em>Irish Math. Soc. Bulletin</em> Number 78, Winter 2016, 14-17. 
+            <button onclick="ToggleVisibility('expo11')">Details</button>
+            <div id="expo11" style="display: none";>
+            This is a report on the annual meeting of the Irish Mathematical Society that I organised together with Richard Timoney in April 2016.
+            </div>            
+            </li>
+			      <li>Vladimir Dotsenko, <a href="https://www.mccme.ru/free-books/dubna/dotsenko.pdf">Арифметика квадратичных форм</a>, Moscow, MCCME publishers, 2015, 30 pages (in Russian).            
+            <button onclick="ToggleVisibility('expo10')">Details</button>
+            <div id="expo10" style="display: none";>
+              These are lecture notes of a mini-course on arithmetics of quadratic forms that I gave at a summer school in Dubna in 2007.
+            </div>            
+            </li>	
+			      <li> Vladimir Dotsenko, <a href="research/files/Turing-web.pdf">Review of the book "Alan M.&nbsp;Turing" by Sara Turing</a>, <em>Irish Math. Soc. Bulletin</em> Number 70, Winter 2012, 54-57. 
+            <button onclick="ToggleVisibility('expo9')">Details</button>
+            <div id="expo9" style="display: none";>
+              This is a review of a biography of Alan Turing I was commissioned by the Irish Mathematical Society.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, <a href="research/files/JLL-InMemoriam.pdf">Remembering Jean-Louis Loday</a>, 2012.
+            <button onclick="ToggleVisibility('expo8')">Details</button>
+            <div id="expo8" style="display: none";>
+              This is a sort of a eulogy to contribute to remembering a mathematical giant who left us way too early.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko and Constantin Shramov, <a href="http://kvant.mccme.ru/pdf/2009/2009-04.pdf">Об одной хорошо забытой старой задаче</a>, <em>Quant</em>, 4 (2009), 34-36 (in Russian).
+            <button onclick="ToggleVisibility('expo7')">Details</button>
+            <div id="expo7" style="display: none";>
+              This is a short article about how a mathematician may perceive an olympiad problem.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, Rafail Gordin, Alexander Shen and Constantin Shramov, <a href="http://kvant.mccme.ru/pdf/2009/2009-04.pdf">Избранные задачи вступительных экзаменов в математические классы школы 57</a>, <em>Quant</em>, 4 (2009), 57-58 (in Russian).
+            <button onclick="ToggleVisibility('expo6')">Details</button>
+            <div id="expo6" style="display: none";>
+              This is a collection of problems from entrance exams to specialized maths classes in high school 57, Moscow, in one of the years when I organized these exams.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, <a href="research/files/Notes_On_Casual_Iso.pdf">Заметки о случайных изоморфизмах</a>, <em>Math. Education</em>, 12 (2008), 81-94 (in Russian).
+            <button onclick="ToggleVisibility('expo5')">Details</button>
+            <div id="expo5" style="display: none";>
+              This is an expository note about some exceptional isomorphisms between finite groups of different types.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko (ed.), <a href="research/files/Collected_Probs.pdf">Задачи по математике, предлагавшиеся ученикам математического класса 57 школы (выпуск 2004 года, класс "Д")</a>, MCCME publishers, 2004, 220 pages (in Russian).             
+            <button onclick="ToggleVisibility('expo4')">Details</button>
+            <div id="expo4" style="display: none";>
+              This is a collection of mathematical problems used for an advanced course in mathematics at the high school 57, Moscow ("D" class, graduated 2004), together with Alexander Shen I was in charge of that advanced course.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, <a href="research/files/Problems_On_Compacts.pdf">Задачи о метрических компактах </a>, <em>Math. Education</em>, 8 (2004), 237-238 (in Russian).
+            <button onclick="ToggleVisibility('expo3')">Details</button>
+            <div id="expo3" style="display: none";>
+              This is an expository note containing solutions of several elegant problems on compact metric spaces.
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, <a href="research/files/Catalan_Numbers.pdf">Числа Каталана и естественные отображения </a>, in <em>Saint--Petersburg Mathematical Olympiad 2003</em>, SPb, Nevskii Dialekt publishers, 2003; 2nd edition in <em>Collected materials of summer camps of the Tournament of Towns</em>, MCCME publishers, 2009, 31 pages  (in Russian).
+            <button onclick="ToggleVisibility('expo2')">Details</button>
+            <div id="expo2" style="display: none";>
+             This is a collection of problems (and solutions to them) under the heading "Catalan numbers and natural maps" that I proposed to one of the summer camps of the Tournament of Towns. 
+            </div>            
+            </li>
+			      <li> Vladimir Dotsenko, <a href="research/files/Nullstellensatz.pdf">Об одном доказательстве теоремы Гильберта о нулях </a>, <em>Math. Education</em>, 6 (2002), 116-118 (in Russian).             
+            <button onclick="ToggleVisibility('expo1')">Details</button>
+            <div id="expo1" style="display: none";>
+              This is an expository note explaining a short proof of Hilbert's Nullstellensatz over an uncountable field.
+            </div>            
+            </li>
+			    </ol>
+
+		<h3 id="publi7">Translations</h3>
+				<ol> 
+			      <li> I. M. Pak, <a href="http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=mp&paperid=123&option_lang=eng">О нескольких теоремах Файна, об Эндрюсе, Дайсоне и об упущенных возможностях </a>, <em>Math. Education</em>, 7 (2003), 136–148. (Translated into Russian by V.Dotsenko). 
+            <button onclick="ToggleVisibility('tran1')">Details</button>
+            <div id="tran1" style="display: none";>
+              This is a translation of the paper "On Fine's partition theorems, Dyson, Andrews, and missed opportunities" by Igor Pak.
+            </div>            
+			      </li>
+			    </ol>
+
+		<h3 id="publi8">Preprints superseded by other articles or not intended for publication</h3>
+				<ol> 
+            <li> Vladimir Dotsenko, Sergey Shadrin, and Bruno Vallette, The twisting procedure, <a href="https://arxiv.org/abs/1810.02941">arXiv:1810.02941</a>.
+            <button onclick="ToggleVisibility('unpub5')">Details</button>
+            <div id="unpub5" style="display: none";>
+            This is a very preliminary manuscript from which we developed the monograph "Maurer-Cartan methods in deformation theory: the twisting procedure".
+            </div>
+            </li>
+			      <li> Vladimir Dotsenko, <a href="research/files/Lily.pdf">Free Lie algebras are not Lily bialgebras</a>.
+            <button onclick="ToggleVisibility('unpub4')">Details</button>
+            <div id="unpub4" style="display: none";>
+            This is a version of a letter to Jean-Louis Loday, 2011, never intended for publication but made available here to address existing misconceptions about one exotic definition of Lie bialgebras.
+            </div>
+            </li>
+			      <li> Vladimir Dotsenko and Anton Khoroshkin, Free resolutions via Gr&ouml;bner bases, <a href="http://arxiv.org/abs/0912.4895">arXiv:0912.4895</a>.
+            <button onclick="ToggleVisibility('unpub3')">Details</button>
+            <div id="unpub3" style="display: none";>
+            This is a preprint which later was substantially reworked and became the article "Quillen homology for operads via Gr&ouml;bner bases".
+            </div>
+            </li>
+			      <li> Vladimir Dotsenko and Anton Khoroshkin, Anick-type resolutions and consecutive pattern avoidance, <a href="http://arxiv.org/abs/1002.2761">arXiv:1002.2761</a>.
+            <button onclick="ToggleVisibility('unpub2')">Details</button>
+            <div id="unpub2" style="display: none";>
+            This is a preprint which later was substantially reworked and became the article "Shuffle algebras, homology, and consecutive pattern avoidance".
+            </div>
+            </li>
+			      <li> Vladimir Dotsenko, A remark on Frobenius characters of set representations of symmetric groups, <a href="http://arxiv.org/abs/0802.1340">arXiv:0802.1340</a>.
+            <button onclick="ToggleVisibility('unpub1')">Details</button>
+            <div id="unpub1" style="display: none";>
+            This is a preprint where the main result turned out to be known to experts; it was used in a meaningful way in my published paper "Parking functions and vertex operators".</div>
+            </li>
+			    </ol>
+
+			
+   	  <h2 id="soft">Software: Gröbner bases for operads</h2>
+
+		<p>This part of my webpage (which is occationally updated) contains various materials related to the implementation of Gröbner bases for operads, as defined by myself and <a href="https://sites.google.com/site/akhoroshkin/">Anton Khoroshkin</a> in our <a href="https://projecteuclid.org/euclid.dmj/1274902083">paper</a> (see also the <a href="https://arxiv.org/abs/0812.4069">arXiv version</a>). This implementation was created by <a href="https://people.bath.ac.uk/wbh22/">Willem Heijltjes</a> under my guidance; it was supported by University of Luxembourg in 2012 and by Trinity College Dublin in 2014. </p>
+
+		<ul>
+			<li>The Haskell code <a href="Operads/OperadsHaskell.zip">(ZIP archive)</a></li>
+			<li>Generic input file: <a href="Operads/input.txt">input.txt</a></li>
+			<li>Input file used for a partial Gröbner basis calculation for the ternary partially associative operad <a href="https://arxiv.org/abs/1604.08580">here</a>: <a href="Operads/nsLeftComb.txt">nsLeftComb.txt</a></li>
+			<li>Input file used for a partial Gröbner basis calculation for the mock-Lie operad <a href="https://arxiv.org/abs/1706.04893">here</a>: <a href="Operads/mockLie.txt">mockLie.txt</a></li>
+			<li>Input file used for a Gröbner basis calculation for a degeneration of the post-Poisson operad <a href="https://arxiv.org/abs/1903.04435">here</a>: <a href="Operads/degPostPoisson.txt">degPostPoisson.txt</a></li>
+		</ul>
+		<p>Let me know if you use this program for other operad-related computations; I will be very happy to add them to this list (which I shall also update with some computations of mine in due course)!</p>
+
+	  <h2 id="students">Research associates and assistants</h2>
+    <h3>Current</h3>
+      <ul>
+        <li><a href="https://www.researchgate.net/profile/Guilai-Liu-3">Guilai Liu</a>, postdoc, 2026-2027.</li>
+        <li><a href="https://scholar.google.com/citations?user=W_WmalMAAAAJ">Denis Lyskov</a>, PhD student (co-supervised with <a href="https://webusers.imj-prg.fr/~bernhard.keller/indexe.html">Bernhard Keller</a>), 2025-2028.</li>
+        <li><a href="https://scholar.google.com/citations?user=r25KJy4AAAAJ&hl=en">Nikita Markarian</a>, visiting researcher, 2024-2026.</li>
+        <li><a href="https://ruanxiabing.github.io/">Xiabing Ruan</a>, PhD student, 2023-2027.</li>
+        <li><a href="https://jsaojoao.github.io/">José São João</a>, PhD student (co-supervised with <a href="https://idrissi.eu/">Najib Idrissi</a>), 2024-2027.</li>
+      </ul>    
+    <h3>Past</h3>
+      <ul>
+        <li><a href="https://sa.linkedin.com/in/norah-alghamdi-1a28a919b">Norah Alghamdi</a>, MSc student, 2017-2019.</li>
+        <li><a href="https://sites.google.com/view/basilecoron/accueil">Basile Coron</a>, PhD student, 2020-2023.</li>
+        <li><a href="https://ca.linkedin.com/in/vincent-gelinas">Vincent G&eacute;linas</a>, postdoc, 2018-2019.</li>
+        <li><a href="https://docs.ufpr.br/~hoefel/">Eduardo Hoefel</a>, visiting researcher, 2024-2025.</li>
+        <li><a href="https://plaubie.github.io/">Paul Laubie</a>, PhD student, 2021-2024.</li>
+        <li><a href="https://lebed.users.lmno.cnrs.fr/">Victoria Lebed</a>, postdoc, 2016-2018.</li>
+        <li><a href="https://www.lucasmasonbrown.com/">Lucas Mason-Brown</a>, MSc student, 2013-2014.</li>
+        <li><a href="https://sites.google.com/view/moreno-fernandez"> José Moreno-Fern&aacute;ndez</a>, visiting PhD student, 2016.</li>
+        <li><a href="https://www.kuleuven.be/wieiswie/en/person/00128393">Soutrik Roy Chowdhury</a>, MSc student, 2014-2015.</li>
+        <li><a href="https://sites.google.com/view/solomadins-homepage">Grigory Solomadin</a>, postdoc, 2023-2024.</li>
+        <li><a href="https://ptamarov.github.io/">Pedro Tamaroff</a>, PhD student, 2017-2021. </li>
+        <li><a href="https://scholar.google.com/citations?user=_BWKYqkAAAAJ&hl=en">Bekzat Zhakhayev</a>, postdoc, 2023-2024.</li>
+      </ul>    
+
+	  <h2 id="contact">Contact information</h2>
+
+		<h3>Office</h3> 
+
+			<p>My office is I-505 (<a href="https://www.google.com/maps/place/Institut+de+Recherche+Math%C3%A9matique+Avanc%C3%A9e/@48.5805537,7.7606393,17z/data=!3m1!4b1!4m5!3m4!1s0x4796c8fe50b3eb29:0x66aa010dad7acb60!8m2!3d48.5805537!4d7.762828">building of the IRMA</a>, 5th floor) </p>
+		
+			<p>If you are visiting Strasbourg and need directions: from the train station of Strasbourg (Gare Centrale), take tram C to the stop <i>Université</i>, walk down Rue Edmond Labbé from the tram stop, continue into Rue du Général Zimmer. After about 400m of walking in total (5 minutes), the mathematics institute building will be on your left. Take the elevator to the fifth floor. </p>
+
+		<h3>Contact details</h3>
+			<ul>
+				<li><b>E-mail:</b> <img width="150" src="img/email.jpg"></li>
+				<li><b>Office phone:</b> +33 (0)3 68 85 02 29</li>
+				<li><b>Postal address:</b><br>
+			    Institut de Recherche Mathématique Avancée de Strasbourg<br>
+			    UMR 7501 de l'Université de Strasbourg et du CNRS<br>
+			    7 rue René Descartes<br> 
+			    67084 Strasbourg Cedex<br>
+			    France</li>
+			</ul>
+   
+</main>
+
+
+
+
+	<h2>Visitors count</h2>
+		<a href="http://statcounter.com/tumblr/" target="_blank" title="tumblr counter"><img alt="tumblr counter" src="http://c.statcounter.com/5785176/0/889ea597/0/" style="border:none"></a>
+	
+		<br> <br>
+
+	<div class="footer">&copy; 2013-2024 Vladimir Dotsenko. CSS by <a href="https://latex.now.sh">https://latex.now.sh</a></div>
+
+	</div>	
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+

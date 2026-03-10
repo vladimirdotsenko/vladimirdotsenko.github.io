@@ -1,0 +1,84 @@
+/*#############################################################
+Name: Bright Pixel
+Date: 2006-05-07
+Description: A smooth, monochrome, lightweight design.
+Author: Viktor Persson
+URL: http://arcsin.se
+
+Feel free to use and modify but please provide credits.
+#############################################################*/
+@charset "UTF-8";
+/* standard elements */
+a {
+	color: #4682B4;
+	text-decoration: none;
+}
+body {
+	background: #FFE5CC url(img/bg.gif) repeat-y fixed bottom center;
+	color: #000000; margin: 20px 0;
+	text-align: center; font: normal 0.9em Arial;
+}
+.gfx a {
+	background: #F5F5F5 url(img/rewrite.png)  no-repeat; display: block; height: 321px;
+}
+
+/* header */
+.header {
+	background: #FFE5CC;
+	border-bottom: 1px solid #E5E5E5;
+	font: bold 2.6em Arial;
+	line-height: 3em;
+}
+
+/* main */
+.main {
+	background: #FFE5CC; 
+	border: 3px double #EEE; 
+	border-color: #E4E4E4 #CFCFCF #CCC #CFCFCF; 
+	margin: 20px auto 4px auto; 
+	text-align: left;
+	width: 980px; 
+}
+.container {
+	margin: 10px;
+}
+
+/* menu */
+.menu a {
+	background: #FFE5CC;
+	border-right: 1px solid #CECECE;
+	border-top: 1px solid #E5E5E5;
+	color: #4682B4;
+	float: left;
+	padding-top: 4px;
+	width: 191px; height: 26px;
+}
+.menu a span {
+	padding-left: 1px;
+}
+.menu a#last {
+	width: 192px;
+	border-right: none;
+}
+
+/* content */
+.content {
+	background: #FFE5CC;
+	border-top: 1px solid #E5E5E5;
+	clear: both;
+}
+.content h1 {
+	margin: 0;
+	font: bold 1.5em Arial;
+	color: #000000;
+}
+.content p {
+	margin: 3px 0 6px; color: #000000;
+}
+
+/* footer */
+.footer {
+	padding: 5px;
+	background: #FFE5CC;
+	color: #666;
+} 

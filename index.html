@@ -118,6 +118,7 @@ It is not uncommon these days for researchers in mathematics to use their profes
     <article>
       <h2 id="carriere">Academic path</h2>
       <ul>
+    <li>Distinguished visiting professor, <a href="https://www.amss.ac.cn">Academy of Mathematics and Systems Sciences, Chinese Academy of Sciences, since September 2026.</li>
     <li>Professor, <a href="http://www.unistra.fr">Universit&eacute; de Strasbourg</a>, since 2019.</li>
 		<li> Assistant professor (tenured) above the merit bar, <a href="http://www.maths.tcd.ie">Trinity College Dublin</a>, 2017-2019.</li>
 		<li> Solomon Lefschetz Chair of mathematics, <a href="http://www.math.cinvestav.mx/en">CINVESTAV-IPN</a>, 2016-2017.</li>
@@ -843,16 +844,25 @@ It is not uncommon these days for researchers in mathematics to use their profes
 			
    	  <h2 id="soft">Software: Gröbner bases for operads</h2>
 
-		<p>This part of my webpage (which is occationally updated) contains various materials related to the implementation of Gröbner bases for operads, as defined by myself and <a href="https://sites.google.com/site/akhoroshkin/">Anton Khoroshkin</a> in our <a href="https://projecteuclid.org/euclid.dmj/1274902083">paper</a> (see also the <a href="https://arxiv.org/abs/0812.4069">arXiv version</a>). This implementation was created by <a href="https://people.bath.ac.uk/wbh22/">Willem Heijltjes</a> under my guidance; it was supported by University of Luxembourg in 2012 and by Trinity College Dublin in 2014. </p>
+		<p>This part of my webpage (which is occationally updated) contains various materials related to the implementation of Gröbner bases for operads, as defined by myself and <a href="https://sites.google.com/site/akhoroshkin/">Anton Khoroshkin</a> in our <a href="https://projecteuclid.org/euclid.dmj/1274902083">paper</a> (see also the <a href="https://arxiv.org/abs/0812.4069">arXiv version</a>). Below I collect the known implementations, in the reverse chronological order. (Of course nowadays you can probably just ask the AI to implement it for you personally.) </p>
 
-		<ul>
-			<li>The Haskell code <a href="Operads/OperadsHaskell.zip">(ZIP archive)</a></li>
-			<li>Generic input file: <a href="Operads/input.txt">input.txt</a></li>
-			<li>Input file used for a partial Gröbner basis calculation for the ternary partially associative operad <a href="https://arxiv.org/abs/1604.08580">here</a>: <a href="Operads/nsLeftComb.txt">nsLeftComb.txt</a></li>
-			<li>Input file used for a partial Gröbner basis calculation for the mock-Lie operad <a href="https://arxiv.org/abs/1706.04893">here</a>: <a href="Operads/mockLie.txt">mockLie.txt</a></li>
-			<li>Input file used for a Gröbner basis calculation for a degeneration of the post-Poisson operad <a href="https://arxiv.org/abs/1903.04435">here</a>: <a href="Operads/degPostPoisson.txt">degPostPoisson.txt</a></li>
-		</ul>
-		<p>Let me know if you use this program for other operad-related computations; I will be very happy to add them to this list (which I shall also update with some computations of mine in due course)!</p>
+    <p> 
+     <ul>
+    <li> As of now (September 2026), the most recent <a href="https://github.com/MedetJuma/haskellOperads">implementation</a> is created by Medet Jumadildayev. Besides some silly improvements I have been meaning to make for years, it parallelizes various computations, which makes great difference. It is build upon the implementation of Willem Heijltjes, and the issue of Koszul signs remains for the time being. </li> 
+    <li>There is <a href="https://github.com/ttlalok/Colored_Operads_Quadraticity">a program from 2019</a> for some computations with Gröbner basis of coloured operads written by Vladislav Kharitonov; I have not used it, but I link it here for completeness. </li>
+    <li>In 2012-2014, an implementation was created by <a href="https://people.bath.ac.uk/wbh22/">Willem Heijltjes</a> under my guidance; it is a rather good implementation which I have used systematically and extensively in my work. I think that it does contain bugs in implementing Koszul signs for operads that have some generators of odd homological degrees, such as the Gerstenhaber operad; alas back in the day we did not test the program enough in that respect. But otherwise the program works well. Here are downloadable materials:
+    <ul>
+      <li>The Haskell code <a href="Operads/OperadsHaskell.zip">(ZIP archive)</a></li>
+      <li>Generic input file: <a href="Operads/input.txt">input.txt</a></li>
+      <li>Input file used for a partial Gröbner basis calculation for the ternary partially associative operad <a href="https://arxiv.org/abs/1604.08580">here</a>: <a href="Operads/nsLeftComb.txt">nsLeftComb.txt</a></li>
+      <li>Input file used for a partial Gröbner basis calculation for the mock-Lie operad <a href="https://arxiv.org/abs/1706.04893">here</a>: <a href="Operads/mockLie.txt">mockLie.txt</a></li>
+      <li>Input file used for a Gröbner basis calculation for a degeneration of the post-Poisson operad <a href="https://arxiv.org/abs/1903.04435">here</a>: <a href="Operads/degPostPoisson.txt">degPostPoisson.txt</a></li>
+    </ul>
+    </li>
+    <li>About 15 years ago, soon after the Gröbner basis theory was developed by myself and Anton Khoroshkin, a proof-of-concept version of the algorithm was implemented by <a href="https://cv.mikael.johanssons.org/">Mikael Vejdemo-Johansson</a> whom I consulted on theorerical matters. That version is <a href="https://hackage.haskell.org/package/Operads">available online</a> but does not seem to be maintained, and I found some examples where it produces seemingly wrong results, so I have not used it for some 10 years. I understand that there is a <a href="https://github.com/Dronte/Operads">version</a> of this implementation from 2017 created by Andrey Lando, but I have not tried it myself.</li> 
+        </ul>
+
+		<p>Let me know if you use Gröbner bases for operads for something!</p>
 
 	  <h2 id="students">Research associates and assistants</h2>
     <h3>Current</h3>

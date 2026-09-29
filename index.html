@@ -22,6 +22,16 @@
   width: 100%;
 }
 </style>
+<!-- MathJax Configuration and Script Loader -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://jsdelivr.net"></script>
 </head>
 
 <body id="top" class="libertinus">
@@ -213,6 +223,12 @@ It is not uncommon these days for researchers in mathematics to use their profes
 			    </ol>
 		<h3 id="publi3">Preprints</h3>
 				<ol>
+            <li>Vladimir Dotsenko and Medet Jumadildayev, Binomial coefficients and the operadic butterfly, preprint <a href="https://arxiv.org/abs/2609.33480">arXiv:2609.33480</a>.
+            <button onclick="ToggleVisibility('prep6')">Details</button>
+            <div id="prep6" style="display: none";>
+            We prove the conjecture of Laubie on dimensions of components of two operads completing Loday's operadic butterfly diagram. For one of these operads, the dimension of the $n$-th component is equal to $\binom{2n}{n-1}$ for ${\small n\ne 3}$ and for the other it is equal to $\binom{2n}{n-1}+1$ for all ${\small n\ge 5}$. 
+            </div>            
+            </li> 
             <li>Vladimir Dotsenko and Bekzat Zhakhayev, A Nielsen-Schreier variety of algebras without the PBW property, preprint <a href="https://arxiv.org/abs/2606.00833">arXiv:2606.00833</a>.
             <button onclick="ToggleVisibility('prep5')">Details</button>
             <div id="prep5" style="display: none";>
